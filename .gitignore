@@ -48,6 +48,7 @@ next-env.d.ts
 Thumbs.db
 
 # Package manager
-package-lock.json
+# Lock files should be committed for reproducible builds
+# Only ignore if using different package managers
 yarn.lock
 pnpm-lock.yaml
