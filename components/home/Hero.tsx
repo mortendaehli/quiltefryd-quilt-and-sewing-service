@@ -1,63 +1,82 @@
 import Image from 'next/image'
 import Link from 'next/link'
+import { QuiltPattern } from '@/components/shared/DecorativeBorder'
+import { ThreadIcon, ButtonIcon } from '@/components/icons/SewingIcons'
 
 export default function Hero() {
   return (
-    <section className="relative bg-gradient-to-br from-quilt-cream to-quilt-beige overflow-hidden">
+    <section className="relative bg-gradient-to-br from-quilt-cream via-white to-quilt-beige overflow-hidden min-h-[80vh] flex items-center">
       {/* Pattern overlay */}
-      <div className="absolute inset-0 pattern-dots pointer-events-none"></div>
+      <QuiltPattern className="text-quilt-moss pointer-events-none opacity-50" />
       
-      <div className="container-custom py-16 md:py-24">
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+      <div className="container-custom py-20 md:py-32 relative z-10">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
           {/* Text Content */}
-          <div className="animate-fade-in">
-            <h1 className="text-4xl md:text-5xl lg:text-6xl font-serif text-quilt-burgundy mb-4">
-              Quilt- og sømtjenester i Tønsberg
+          <div className="animate-fade-in space-y-6">
+            <div className="inline-block">
+              <span className="text-quilt-gold uppercase tracking-[0.2em] text-sm font-medium">Velkommen til</span>
+            </div>
+            <h1 className="text-5xl md:text-6xl lg:text-7xl font-serif text-quilt-burgundy leading-[1.1] font-light">
+              Quilt- og sømtjenester
+              <span className="block text-3xl md:text-4xl lg:text-5xl text-quilt-forest mt-2">i Tønsberg</span>
             </h1>
-            <p className="text-lg md:text-xl text-gray-700 mb-8">
+            <p className="text-lg md:text-xl text-gray-700 leading-relaxed max-w-xl">
               Longarm-quilting, gardiner og puter, bunadsjustering og små reparasjoner. 
               Med over 10 års erfaring fra Quiltefryd hjelper jeg deg med dine sømprosjekter.
             </p>
             
-            <div className="flex flex-col sm:flex-row gap-4">
-              <Link href="/kontakt" className="btn-primary text-center">
+            <div className="flex flex-col sm:flex-row gap-4 pt-4">
+              <Link href="/kontakt" className="btn-primary text-center inline-flex items-center justify-center gap-2 group">
+                <ButtonIcon className="w-5 h-5 opacity-70 group-hover:opacity-100 transition-opacity" />
                 Kontakt meg
               </Link>
-              <Link href="/tjenester" className="btn-secondary text-center">
+              <Link href="/tjenester" className="btn-secondary text-center inline-flex items-center justify-center gap-2 group">
+                <ThreadIcon className="w-5 h-5 opacity-70 group-hover:opacity-100 transition-opacity" />
                 Se tjenester
               </Link>
             </div>
 
             {/* Quick Info */}
-            <div className="mt-8 flex flex-wrap gap-6 text-sm">
-              <div className="flex items-center gap-2">
-                <span className="text-quilt-burgundy">✓</span>
-                <span>Erfaren quilter</span>
+            <div className="mt-12 flex flex-wrap gap-8 text-sm">
+              <div className="flex items-center gap-3">
+                <div className="w-8 h-8 rounded-full bg-quilt-burgundy/10 flex items-center justify-center">
+                  <span className="text-quilt-burgundy text-lg">✓</span>
+                </div>
+                <span className="text-gray-700 font-medium">Erfaren quilter</span>
               </div>
-              <div className="flex items-center gap-2">
-                <span className="text-quilt-burgundy">✓</span>
-                <span>Longarm-maskin</span>
+              <div className="flex items-center gap-3">
+                <div className="w-8 h-8 rounded-full bg-quilt-burgundy/10 flex items-center justify-center">
+                  <span className="text-quilt-burgundy text-lg">✓</span>
+                </div>
+                <span className="text-gray-700 font-medium">Longarm-maskin</span>
               </div>
-              <div className="flex items-center gap-2">
-                <span className="text-quilt-burgundy">✓</span>
-                <span>Rask levering</span>
+              <div className="flex items-center gap-3">
+                <div className="w-8 h-8 rounded-full bg-quilt-burgundy/10 flex items-center justify-center">
+                  <span className="text-quilt-burgundy text-lg">✓</span>
+                </div>
+                <span className="text-gray-700 font-medium">Rask levering</span>
               </div>
             </div>
           </div>
 
           {/* Hero Image */}
-          <div className="relative h-[400px] lg:h-[500px] rounded-2xl overflow-hidden shadow-2xl animate-slide-up">
-            <Image
-              src="/images/hero.png"
-              alt="Quilting og sømarbeid"
-              fill
-              className="object-cover"
-              priority
-            />
-            {/* Decorative elements */}
-            <div className="absolute top-4 right-4 bg-white/90 backdrop-blur px-4 py-2 rounded-full">
-              <span className="text-quilt-forest font-medium">Quiltefryd</span>
+          <div className="relative">
+            <div className="relative h-[450px] lg:h-[600px] rounded-3xl overflow-hidden shadow-2xl animate-slide-up transform rotate-1 hover:rotate-0 transition-transform duration-500">
+              <Image
+                src="/images/hero.png"
+                alt="Quilting og sømarbeid"
+                fill
+                className="object-cover"
+                priority
+              />
+              {/* Decorative elements */}
+              <div className="absolute top-6 right-6 bg-white/95 backdrop-blur-sm px-6 py-3 rounded-full shadow-lg">
+                <span className="text-quilt-forest font-serif text-lg">Quiltefryd</span>
+              </div>
             </div>
+            {/* Decorative corner accent */}
+            <div className="absolute -bottom-4 -right-4 w-24 h-24 bg-quilt-gold/20 rounded-full blur-2xl" />
+            <div className="absolute -top-4 -left-4 w-32 h-32 bg-quilt-burgundy/10 rounded-full blur-3xl" />
           </div>
         </div>
       </div>

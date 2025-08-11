@@ -8,33 +8,56 @@
   }
   
   body {
-    @apply bg-quilt-cream text-gray-900 font-sans;
+    @apply bg-quilt-cream text-gray-900 font-sans antialiased;
   }
   
-  h1, h2, h3, h4, h5, h6 {
-    @apply font-serif text-quilt-burgundy;
+  h1 {
+    @apply font-serif text-quilt-burgundy tracking-tight;
+  }
+  
+  h2 {
+    @apply font-serif text-quilt-forest tracking-tight;
+  }
+  
+  h3, h4, h5, h6 {
+    @apply font-serif text-quilt-brown;
+  }
+  
+  p {
+    @apply leading-relaxed;
   }
 }
 
 @layer components {
   .btn-primary {
-    @apply bg-quilt-burgundy text-white px-6 py-3 rounded-lg font-medium 
-           hover:bg-opacity-90 transition-all duration-200 
-           focus:outline-none focus:ring-2 focus:ring-quilt-burgundy focus:ring-offset-2;
+    @apply bg-quilt-burgundy text-white px-8 py-3.5 rounded-full font-medium 
+           hover:bg-opacity-90 transition-all duration-200 transform hover:scale-105
+           focus:outline-none focus:ring-2 focus:ring-quilt-burgundy focus:ring-offset-2
+           shadow-md hover:shadow-lg;
   }
   
   .btn-secondary {
-    @apply border-2 border-quilt-forest text-quilt-forest px-6 py-3 rounded-lg font-medium 
-           hover:bg-quilt-forest hover:text-white transition-all duration-200
+    @apply border-2 border-quilt-forest text-quilt-forest px-8 py-3.5 rounded-full font-medium 
+           hover:bg-quilt-forest hover:text-white transition-all duration-200 transform hover:scale-105
            focus:outline-none focus:ring-2 focus:ring-quilt-forest focus:ring-offset-2;
   }
   
+  .btn-text {
+    @apply text-quilt-burgundy font-medium hover:text-quilt-forest transition-colors duration-200
+           underline underline-offset-4 decoration-1 hover:decoration-2;
+  }
+  
   .card {
-    @apply bg-white rounded-xl shadow-lg p-6 hover:shadow-xl transition-shadow duration-300;
+    @apply bg-white rounded-2xl shadow-sm hover:shadow-xl transition-all duration-300 p-8
+           border border-quilt-beige/20;
   }
   
   .container-custom {
     @apply max-w-7xl mx-auto px-4 sm:px-6 lg:px-8;
+  }
+  
+  .section-padding {
+    @apply py-20 lg:py-28;
   }
 }
 
@@ -47,5 +70,44 @@
     background-image: radial-gradient(circle, #7B2C2C 1px, transparent 1px);
     background-size: 20px 20px;
     opacity: 0.03;
+  }
+  
+  .pattern-quilt {
+    background-image: 
+      linear-gradient(45deg, transparent 48%, currentColor 49%, currentColor 51%, transparent 52%),
+      linear-gradient(-45deg, transparent 48%, currentColor 49%, currentColor 51%, transparent 52%);
+    background-size: 30px 30px;
+    opacity: 0.03;
+  }
+  
+  .pattern-stitch {
+    background-image: repeating-linear-gradient(
+      0deg,
+      transparent,
+      transparent 10px,
+      currentColor 10px,
+      currentColor 11px
+    );
+    opacity: 0.05;
+  }
+  
+  .delay-0 {
+    animation-delay: 0ms;
+  }
+  
+  .delay-100 {
+    animation-delay: 100ms;
+  }
+  
+  .delay-200 {
+    animation-delay: 200ms;
+  }
+  
+  .delay-300 {
+    animation-delay: 300ms;
+  }
+  
+  .delay-400 {
+    animation-delay: 400ms;
   }
 }
