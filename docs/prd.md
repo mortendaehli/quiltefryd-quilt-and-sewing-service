@@ -1,8 +1,3 @@
-Here’s the full translation of the specification document into English.
-I’ve kept the original structure, headings, and nuance so it remains ready to hand over to a junior engineer or Claude Code for implementation.
-
----
-
 # Website for Marit Aslesen’s Quilt and Sewing Services
 
 ## Introduction and Background
