@@ -28,3 +28,6 @@ out
 *.njsproj
 *.sln
 *.sw?
+
+.playwright-mcp/
+.claude/
