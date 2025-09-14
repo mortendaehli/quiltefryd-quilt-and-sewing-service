@@ -1,6 +1,5 @@
 <script setup lang="ts">
 import { useHead } from '@vueuse/head'
-import ContactForm from '@/components/shared/ContactForm.vue'
 
 useHead({
   title: 'Kontakt - Quiltefryd | Ta kontakt for pristilbud',
@@ -115,15 +114,51 @@ useHead({
             </div>
           </div>
 
-          <!-- Contact Form -->
+          <!-- Additional Contact Methods -->
           <div>
             <h2 class="text-2xl md:text-3xl font-serif text-quilt-burgundy mb-6">
-              Send melding
+              Beste måter å nå meg
             </h2>
             
-            <ContactForm />
+            <div class="space-y-6">
+              <div class="bg-white rounded-xl shadow-lg p-8">
+                <h3 class="text-xl font-serif text-quilt-forest mb-4">
+                  Ring meg direkte
+                </h3>
+                <p class="text-gray-700 mb-4">
+                  Den raskeste måten å få svar på spørsmål og avtale tid.
+                </p>
+                <a href="tel:95195088" class="btn-primary inline-flex items-center gap-2">
+                  📞 Ring 95 19 50 88
+                </a>
+              </div>
+
+              <div class="bg-white rounded-xl shadow-lg p-8">
+                <h3 class="text-xl font-serif text-quilt-forest mb-4">
+                  Send SMS
+                </h3>
+                <p class="text-gray-700 mb-4">
+                  Perfekt for å avtale tid eller sende bilder av prosjektet ditt.
+                </p>
+                <a href="sms:95195088" class="btn-secondary inline-flex items-center gap-2">
+                  💬 Send SMS til 95 19 50 88
+                </a>
+              </div>
+
+              <div class="bg-white rounded-xl shadow-lg p-8">
+                <h3 class="text-xl font-serif text-quilt-forest mb-4">
+                  Send e-post
+                </h3>
+                <p class="text-gray-700 mb-4">
+                  For mer detaljerte forespørsler og avtaler.
+                </p>
+                <a href="mailto:marit@quiltefryd.no" class="btn-secondary inline-flex items-center gap-2">
+                  ✉️ marit@quiltefryd.no
+                </a>
+              </div>
+            </div>
             
-            <div class="mt-6 p-4 bg-quilt-cream rounded-lg">
+            <div class="mt-8 p-6 bg-quilt-cream rounded-lg">
               <p class="text-sm text-gray-700">
                 <strong>Tips:</strong> Beskriv gjerne prosjektet ditt så detaljert som mulig, 
                 inkludert størrelse, type stoff, og ønsket leveringstid. 

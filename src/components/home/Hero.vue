@@ -53,14 +53,21 @@
           </div>
         </div>
 
-        <!-- Hero Image -->
+        <!-- Hero Video -->
         <div class="relative">
           <div class="relative h-[450px] lg:h-[600px] rounded-3xl overflow-hidden shadow-2xl animate-slide-up transform rotate-1 hover:rotate-0 transition-transform duration-500">
-            <img
-              src="/images/hero.png"
-              alt="Quilting og sømarbeid"
-              class="w-full h-full object-cover"
-            />
+            <video
+              autoplay
+              muted
+              playsinline
+              loop
+              preload="auto"
+              :poster="heroPoster"
+              class="w-full h-full object-cover object-left"
+            >
+              <source :src="heroWebm" type="video/webm" />
+              <source :src="heroMp4" type="video/mp4" />
+            </video>
             <!-- Decorative elements -->
             <div class="absolute top-6 right-6 bg-white/95 backdrop-blur-sm px-6 py-3 rounded-full shadow-lg">
               <span class="text-quilt-forest font-serif text-lg">Quiltefryd</span>
@@ -78,4 +85,7 @@
 <script setup lang="ts">
 import QuiltPattern from '@/components/shared/QuiltPattern.vue'
 import SewingIcons from '@/components/icons/SewingIcons.vue'
+import heroMp4 from '@/assets/videos/hero.mp4'
+import heroWebm from '@/assets/videos/hero.webm'
+import heroPoster from '@/assets/videos/hero-poster.jpg'
 </script>

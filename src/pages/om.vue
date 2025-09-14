@@ -166,8 +166,8 @@ useHead({
             <!-- Photo Placeholder -->
             <div class="relative h-[300px] rounded-xl overflow-hidden shadow-lg">
               <img
-                src="/images/contact-page-image.png"
-                alt="Marit Aslesen"
+                src="/images/IMG_2088.jpg"
+                alt="Elegant quiltearbeid av Marit Aslesen - Quiltefryd"
                 class="w-full h-full object-cover"
               />
               <div class="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent"></div>

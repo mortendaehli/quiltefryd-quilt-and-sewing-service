@@ -37,30 +37,26 @@ useHead({
               </h2>
               <div class="prose prose-lg text-gray-700 space-y-4">
                 <p>
-                  Jeg quilter teppene dine på min profesjonelle <strong>Innova longarm-maskin</strong> 
+                  Jeg quilter teppene dine på min profesjonelle longarm-maskin 
                   med pene, jevne sømmer som holder i generasjoner.
                 </p>
                 
                 <h3 class="text-xl font-serif text-quilt-forest mt-6 mb-3">
-                  Dette tilbyr jeg:
+                  E2E-quilting (heldekkende mønster):
                 </h3>
                 <ul class="space-y-2">
-                  <li>✓ Kant-til-kant-mønster i flere varianter</li>
-                  <li>✓ Montering av vatt og bakstykke</li>
-                  <li>✓ Påsying av lukkekant</li>
-                  <li>✓ Levering etter avtale eller per post</li>
+                  <li>✓ Mange mønstre å velge mellom</li>
+                  <li>✓ Inkludert tråd i prisen</li>
+                  <li>✓ Jeg har vatt til tepper</li>
+                  <li>✓ Profesjonell finish og kvalitet</li>
                 </ul>
 
                 <h3 class="text-xl font-serif text-quilt-forest mt-6 mb-3">
-                  Slik leverer du:
+                  Levering og henting:
                 </h3>
                 <p>
-                  Du kan levere quiltetoppen din personlig i Tønsberg, eller sende den per post. 
-                  Jeg sender ferdig quiltet teppe tilbake til deg.
-                </p>
-                
-                <p class="text-sm italic">
-                  Estimert leveringstid: 1-2 uker avhengig av størrelse og sesong.
+                  Vi avtaler via SMS eller telefon for henting/levering i bunadsbutikken i 
+                  <strong>Øvre Langgate 71 (Gjesdal bunad søm og håndverk)</strong>.
                 </p>
               </div>
               
@@ -70,11 +66,15 @@ useHead({
             </div>
             
             <div class="bg-quilt-cream rounded-xl p-8">
-              <div class="aspect-square bg-white rounded-lg flex items-center justify-center text-6xl">
-                🧵
+              <div class="aspect-square rounded-lg overflow-hidden">
+                <img 
+                  src="/images/IMG_2087.jpg" 
+                  alt="Profesjonell longarm-quilting - gul og grå moderne quilt"
+                  class="w-full h-full object-cover"
+                />
               </div>
               <p class="text-center mt-4 text-sm text-gray-600">
-                Fra kr 325 per m² (kant-til-kant)
+                Kr 350-400 per m² (inkl. tråd)
               </p>
             </div>
           </div>
@@ -96,22 +96,26 @@ useHead({
                 </p>
                 
                 <h3 class="text-xl font-serif text-quilt-forest mt-6 mb-3">
-                  Eksempler på oppdrag:
+                  Priser fra:
                 </h3>
                 <ul class="space-y-2">
-                  <li>✓ Gardiner med opplegg og spesialmål</li>
-                  <li>✓ Liftgardiner og panelgardiner</li>
-                  <li>✓ Sofaputer og sitteunderlag</li>
-                  <li>✓ Båtputer og campingvognsputer</li>
-                  <li>✓ Duker og løpere</li>
+                  <li>✓ Legge opp gardiner faste stoffer: <strong>250,- pr stk</strong></li>
+                  <li>✓ Legge opp lingardiner: <strong>300,- pr stk</strong></li>
+                  <li>✓ Legge opp gardiner med fór: <strong>450,- pr stk</strong></li>
+                  <li>✓ Sy liftgardin under 1 meter: <strong>2000,- pr stk</strong></li>
+                  <li>✓ Sy liftgardin 1-2 meter: <strong>2800,- pr stk</strong></li>
+                  <li>✓ Sy pyntepute ca 50x50 cm med glidelås: <strong>500,- pr stk</strong></li>
                 </ul>
 
+                <p class="bg-quilt-cream p-4 rounded-lg text-sm">
+                  <strong>Mønsttertilpasning:</strong> Tillegg på 30% hvis mønster må tilpasses ved liftgardiner.
+                </p>
+                
                 <h3 class="text-xl font-serif text-quilt-forest mt-6 mb-3">
-                  Materialer:
+                  Spesialoppdrag:
                 </h3>
                 <p>
-                  Du kan levere egne stoffer, eller jeg kan hjelpe deg med innkjøp av 
-                  materialer fra mine leverandører.
+                  Timesbetaling på <strong>800,- per time</strong> for spesialoppdrag og tilpassede løsninger.
                 </p>
               </div>
               
@@ -121,11 +125,15 @@ useHead({
             </div>
             
             <div class="bg-quilt-cream rounded-xl p-8 lg:order-1">
-              <div class="aspect-square bg-white rounded-lg flex items-center justify-center text-6xl">
-                🪟
+              <div class="aspect-square rounded-lg overflow-hidden">
+                <img 
+                  src="/images/interior.png" 
+                  alt="Elegante gardiner og dekorative puter - interiørsøm av Marit"
+                  class="w-full h-full object-cover"
+                />
               </div>
               <p class="text-center mt-4 text-sm text-gray-600">
-                Pris etter vurdering
+                Fra kr 250,- (se prisliste)
               </p>
             </div>
           </div>
@@ -173,8 +181,12 @@ useHead({
             </div>
             
             <div class="bg-quilt-cream rounded-xl p-8">
-              <div class="aspect-square bg-white rounded-lg flex items-center justify-center text-6xl">
-                👗
+              <div class="aspect-square rounded-lg overflow-hidden">
+                <img 
+                  src="/images/IMG_2090.jpg" 
+                  alt="Elegant quiltearbeid - subtile mønstre og fine detaljer"
+                  class="w-full h-full object-cover"
+                />
               </div>
               <p class="text-center mt-4 text-sm text-gray-600">
                 Pris etter vurdering
@@ -222,8 +234,12 @@ useHead({
             </div>
             
             <div class="bg-quilt-cream rounded-xl p-8 lg:order-1">
-              <div class="aspect-square bg-white rounded-lg flex items-center justify-center text-6xl">
-                ✂️
+              <div class="aspect-square rounded-lg overflow-hidden">
+                <img 
+                  src="/images/IMG_2093.jpg" 
+                  alt="Fargerik quilt med livlige mønstre og ekspertise"
+                  class="w-full h-full object-cover"
+                />
               </div>
               <p class="text-center mt-4 text-sm text-gray-600">
                 Fra kr 150

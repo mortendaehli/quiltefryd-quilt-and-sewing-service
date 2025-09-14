@@ -26,7 +26,7 @@ useHead({
         '@context': 'https://schema.org',
         '@type': 'LocalBusiness',
         name: 'Quiltefryd – Quilt og Søm ved Marit Aslesen',
-        image: 'https://quiltefryd.no/images/hero.png',
+        image: 'https://quiltefryd.no/images/IMG_2087.jpg',
         email: 'marit@quiltefryd.no',
         telephone: '+4795195088',
         address: {
