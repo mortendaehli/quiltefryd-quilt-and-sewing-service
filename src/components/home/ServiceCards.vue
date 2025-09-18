@@ -74,15 +74,9 @@ const services = [
     icon: 'Curtain' as const
   },
   {
-    title: 'Bunad og festdrakt',
-    description: 'Justering og tilpasning av bunad. Inn/ut, opplegg og små reparasjoner.',
-    link: '/tjenester#bunad',
-    icon: 'Dress' as const
-  },
-  {
-    title: 'Reparasjon og omsøm',
-    description: 'Bukseopplegg, glidelåsbytte, innsving og andre justeringer av klær.',
-    link: '/tjenester#reparasjon-omsom',
+    title: 'Diverse søm',
+    description: 'Ulike sømoppgaver som bukseopplegg, glidelåsbytte, reparasjoner og andre tilpasninger.',
+    link: '/tjenester#diverse-som',
     icon: 'Scissors' as const
   }
 ]

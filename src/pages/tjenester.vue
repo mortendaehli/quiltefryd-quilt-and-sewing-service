@@ -18,7 +18,7 @@ useHead({
           Mine tjenester
         </h1>
         <p class="text-lg text-gray-700 max-w-3xl">
-          Jeg hjelper deg med alt fra longarm-quilting til bunadsjustering. 
+          Jeg hjelper deg med alt fra longarm-quilting og diverse søm.
           Alle oppdrag utføres med omhu og fokus på kvalitet.
         </p>
       </div>
@@ -37,8 +37,7 @@ useHead({
               </h2>
               <div class="prose prose-lg text-gray-700 space-y-4">
                 <p>
-                  Jeg quilter teppene dine på min profesjonelle longarm-maskin 
-                  med pene, jevne sømmer som holder i generasjoner.
+                  Jeg quilter teppene dine på min profesjonelle longarm-maskin.
                 </p>
                 
                 <h3 class="text-xl font-serif text-quilt-forest mt-6 mb-3">
@@ -61,7 +60,7 @@ useHead({
               </div>
               
               <RouterLink to="/kontakt" class="btn-primary inline-block mt-6">
-                Be om tilbud
+                Ta kontakt
               </RouterLink>
             </div>
             
@@ -120,7 +119,7 @@ useHead({
               </div>
               
               <RouterLink to="/kontakt" class="btn-primary inline-block mt-6">
-                Kontakt for pristilbud
+                Ta kontakt
               </RouterLink>
             </div>
             
@@ -139,104 +138,32 @@ useHead({
           </div>
         </div>
 
-        <hr class="border-quilt-beige" />
-
-        <!-- Bunad -->
-        <div id="bunad" class="scroll-mt-20">
-          <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 items-start">
-            <div>
-              <h2 class="text-3xl font-serif text-quilt-burgundy mb-4">
-                Bunad - enkle jobber
-              </h2>
-              <div class="prose prose-lg text-gray-700 space-y-4">
-                <p>
-                  Jeg utfører enklere bunadsjobber med respekt for tradisjon og håndverk. 
-                  Perfekt før 17. mai, konfirmasjon eller bryllup.
-                </p>
-                
-                <h3 class="text-xl font-serif text-quilt-forest mt-6 mb-3">
-                  Typiske oppdrag:
-                </h3>
-                <ul class="space-y-2">
-                  <li>✓ Inn/ut av liv og skjørt</li>
-                  <li>✓ Opplegg av skjørt</li>
-                  <li>✓ Reparasjon av sømmer</li>
-                  <li>✓ Bytte av hekter og knapper</li>
-                  <li>✓ Fôring og småjusteringer</li>
-                </ul>
-
-                <p class="bg-quilt-cream p-4 rounded-lg text-sm">
-                  <strong>Viktig:</strong> Jeg tar ikke på meg større ombygginger eller 
-                  broderiarbeid. Ta kontakt for vurdering av ditt behov.
-                </p>
-                
-                <p>
-                  All håndtering skjer diskré, og vi avtaler prøving ved behov.
-                </p>
-              </div>
-              
-              <RouterLink to="/kontakt" class="btn-primary inline-block mt-6">
-                Kontakt meg
-              </RouterLink>
-            </div>
-            
-            <div class="bg-quilt-cream rounded-xl p-8">
-              <div class="aspect-square rounded-lg overflow-hidden">
-                <img 
-                  src="/images/IMG_2090.jpg" 
-                  alt="Elegant quiltearbeid - subtile mønstre og fine detaljer"
-                  class="w-full h-full object-cover"
-                />
-              </div>
-              <p class="text-center mt-4 text-sm text-gray-600">
-                Pris etter vurdering
-              </p>
-            </div>
-          </div>
-        </div>
 
         <hr class="border-quilt-beige" />
 
-        <!-- Reparasjon og omsøm -->
-        <div id="reparasjon-omsom" class="scroll-mt-20">
+        <!-- Diverse søm -->
+        <div id="diverse-som" class="scroll-mt-20">
           <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 items-start">
             <div class="lg:order-2">
               <h2 class="text-3xl font-serif text-quilt-burgundy mb-4">
-                Reparasjon og omsøm
+                Diverse søm
               </h2>
               <div class="prose prose-lg text-gray-700 space-y-4">
                 <p>
-                  Gi klærne dine nytt liv! Jeg utfører alle typer reparasjoner og 
-                  tilpasninger på klær.
-                </p>
-                
-                <h3 class="text-xl font-serif text-quilt-forest mt-6 mb-3">
-                  Vanlige oppdrag:
-                </h3>
-                <ul class="space-y-2">
-                  <li>✓ Bukseopplegg</li>
-                  <li>✓ Glidelåsbytte</li>
-                  <li>✓ Innsving av kjole og jakke</li>
-                  <li>✓ Ermeforkorting</li>
-                  <li>✓ Lapping og stopping</li>
-                  <li>✓ Knapper og hemper</li>
-                </ul>
-
-                <p>
-                  Pris varierer med arbeidets omfang. Du får alltid prisoverslag før 
+                  Pris varierer med arbeidets omfang. Du får alltid prisoverslag før
                   jeg starter arbeidet.
                 </p>
               </div>
-              
+
               <RouterLink to="/kontakt" class="btn-primary inline-block mt-6">
-                Send forespørsel
+                Ta kontakt
               </RouterLink>
             </div>
-            
+
             <div class="bg-quilt-cream rounded-xl p-8 lg:order-1">
               <div class="aspect-square rounded-lg overflow-hidden">
-                <img 
-                  src="/images/IMG_2093.jpg" 
+                <img
+                  src="/images/IMG_2093.jpg"
                   alt="Fargerik quilt med livlige mønstre og ekspertise"
                   class="w-full h-full object-cover"
                 />
@@ -258,13 +185,13 @@ useHead({
             </h2>
             <p class="text-lg text-gray-700 max-w-2xl mx-auto mb-8">
               Har du et sømprosjekt som ikke passer inn i kategoriene over? 
-              Ta kontakt, så finner vi en løsning sammen!
+              Ta kontakt!
             </p>
             <p class="text-gray-600 mb-8">
               Jeg er alltid åpen for nye utfordringer og kreative prosjekter.
             </p>
             <RouterLink to="/kontakt" class="btn-primary">
-              Fortell om ditt prosjekt
+              Ta kontakt
             </RouterLink>
           </div>
         </div>
@@ -280,22 +207,13 @@ useHead({
         </h2>
         
         <div class="max-w-3xl mx-auto space-y-6">
-          <div class="bg-white rounded-lg p-6">
-            <h3 class="font-semibold text-quilt-forest mb-2">
-              Hvor lang leveringstid har du?
-            </h3>
-            <p class="text-gray-700">
-              Vanligvis 1-2 uker for quilting, 2-3 uker for større sømoppdrag. 
-              I høysesong (vår/høst) kan det ta litt lengre tid.
-            </p>
-          </div>
           
           <div class="bg-white rounded-lg p-6">
             <h3 class="font-semibold text-quilt-forest mb-2">
               Må jeg komme til Tønsberg for å levere?
             </h3>
             <p class="text-gray-700">
-              Nei, du kan sende quiltetopper og mindre plagg per post. 
+              Nei, du kan sende quiltetopper og diverse syoppdrag per post.
               Vi avtaler frakt og retur når du tar kontakt.
             </p>
           </div>
@@ -306,7 +224,7 @@ useHead({
             </h3>
             <p class="text-gray-700">
               Vipps, kontant eller bankoverføring ved henting/levering. 
-              Faktura kan ordnes ved behov.
+              Faktura kan ordnes for firmaer.
             </p>
           </div>
         </div>

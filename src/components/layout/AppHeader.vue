@@ -20,7 +20,7 @@ const closeMenu = () => {
       <div class="container-custom">
         <div class="flex justify-between items-center py-4">
           <!-- Logo/Brand -->
-          <RouterLink to="/public" class="flex items-center space-x-2">
+          <RouterLink to="/" class="flex items-center space-x-2">
             <div class="flex flex-col">
               <span class="text-2xl font-serif text-quilt-burgundy">Quiltefryd</span>
               <span class="text-sm text-quilt-forest">Marit Aslesen</span>
@@ -34,9 +34,6 @@ const closeMenu = () => {
 
           <!-- Desktop CTA -->
           <div class="hidden md:flex items-center space-x-4">
-            <a href="tel:95195088" class="text-quilt-forest hover:text-quilt-burgundy transition-colors">
-              <span class="font-medium">95 19 50 88</span>
-            </a>
             <RouterLink to="/kontakt" class="btn-primary">
               Kontakt meg
             </RouterLink>
@@ -73,12 +70,9 @@ const closeMenu = () => {
         <div class="container-custom py-4">
           <AppNavigation mobile @item-click="closeMenu" />
           <div class="mt-4 pt-4 border-t border-gray-200">
-            <a href="tel:95195088" class="block py-2 text-quilt-forest font-medium">
-              📞 Ring: 95 19 50 88
-            </a>
-            <RouterLink 
-              to="/kontakt" 
-              class="block mt-2 btn-primary text-center"
+            <RouterLink
+              to="/kontakt"
+              class="block btn-primary text-center"
               @click="closeMenu"
             >
               Kontakt meg
@@ -91,10 +85,6 @@ const closeMenu = () => {
     <!-- Mobile Sticky Contact Bar -->
     <div class="md:hidden fixed bottom-0 left-0 right-0 bg-quilt-burgundy text-white z-40">
       <div class="flex">
-        <a href="tel:95195088" class="flex-1 py-3 text-center border-r border-white/20">
-          <span class="text-sm">Ring</span>
-          <span class="block font-medium">95 19 50 88</span>
-        </a>
         <a href="mailto:marit@quiltefryd.no" class="flex-1 py-3 text-center">
           <span class="text-sm">Send</span>
           <span class="block font-medium">E-post</span>

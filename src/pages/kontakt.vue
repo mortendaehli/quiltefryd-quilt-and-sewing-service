@@ -37,17 +37,6 @@ useHead({
             
             <!-- Contact Cards -->
             <div class="space-y-4 mb-8">
-              <a href="tel:95195088" class="block bg-white rounded-lg shadow-md p-6 hover:shadow-lg transition-shadow">
-                <div class="flex items-center gap-4">
-                  <div class="w-12 h-12 bg-quilt-cream rounded-full flex items-center justify-center text-2xl">
-                    📞
-                  </div>
-                  <div>
-                    <p class="text-sm text-gray-600">Telefon</p>
-                    <p class="text-lg font-medium text-quilt-forest">95 19 50 88</p>
-                  </div>
-                </div>
-              </a>
 
               <a href="mailto:marit@quiltefryd.no" class="block bg-white rounded-lg shadow-md p-6 hover:shadow-lg transition-shadow">
                 <div class="flex items-center gap-4">
@@ -67,9 +56,9 @@ useHead({
                     📍
                   </div>
                   <div>
-                    <p class="text-sm text-gray-600">Lokasjon</p>
+                    <p class="text-sm text-gray-600">Henting og levering via Gjesdal Bunad, Søm og Håndverk</p>
                     <p class="text-lg font-medium text-quilt-forest">Tønsberg</p>
-                    <p class="text-sm text-gray-600 mt-1">Adresse oppgis ved avtale</p>
+                    <p class="text-sm text-gray-600 mt-1">Øvre Langgate 71</p>
                   </div>
                 </div>
               </div>
@@ -114,58 +103,6 @@ useHead({
             </div>
           </div>
 
-          <!-- Additional Contact Methods -->
-          <div>
-            <h2 class="text-2xl md:text-3xl font-serif text-quilt-burgundy mb-6">
-              Beste måter å nå meg
-            </h2>
-            
-            <div class="space-y-6">
-              <div class="bg-white rounded-xl shadow-lg p-8">
-                <h3 class="text-xl font-serif text-quilt-forest mb-4">
-                  Ring meg direkte
-                </h3>
-                <p class="text-gray-700 mb-4">
-                  Den raskeste måten å få svar på spørsmål og avtale tid.
-                </p>
-                <a href="tel:95195088" class="btn-primary inline-flex items-center gap-2">
-                  📞 Ring 95 19 50 88
-                </a>
-              </div>
-
-              <div class="bg-white rounded-xl shadow-lg p-8">
-                <h3 class="text-xl font-serif text-quilt-forest mb-4">
-                  Send SMS
-                </h3>
-                <p class="text-gray-700 mb-4">
-                  Perfekt for å avtale tid eller sende bilder av prosjektet ditt.
-                </p>
-                <a href="sms:95195088" class="btn-secondary inline-flex items-center gap-2">
-                  💬 Send SMS til 95 19 50 88
-                </a>
-              </div>
-
-              <div class="bg-white rounded-xl shadow-lg p-8">
-                <h3 class="text-xl font-serif text-quilt-forest mb-4">
-                  Send e-post
-                </h3>
-                <p class="text-gray-700 mb-4">
-                  For mer detaljerte forespørsler og avtaler.
-                </p>
-                <a href="mailto:marit@quiltefryd.no" class="btn-secondary inline-flex items-center gap-2">
-                  ✉️ marit@quiltefryd.no
-                </a>
-              </div>
-            </div>
-            
-            <div class="mt-8 p-6 bg-quilt-cream rounded-lg">
-              <p class="text-sm text-gray-700">
-                <strong>Tips:</strong> Beskriv gjerne prosjektet ditt så detaljert som mulig, 
-                inkludert størrelse, type stoff, og ønsket leveringstid. 
-                Dette hjelper meg å gi deg et nøyaktig pristilbud.
-              </p>
-            </div>
-          </div>
         </div>
 
         <!-- Map/Directions Section -->
@@ -174,12 +111,8 @@ useHead({
             Besøksadresse
           </h2>
           <p class="text-gray-700 mb-4">
-            Jeg holder til i Tønsberg. Nøyaktig adresse oppgis når vi har avtalt 
-            tid for levering eller henting av ditt prosjekt.
-          </p>
-          <p class="text-gray-600">
-            For levering av større prosjekter eller quiltetopper kan vi også avtale 
-            forsendelse per post.
+            Jeg bor til i Tønsberg. Nøyaktig adresse oppgis når vi har avtalt
+            tid for levering/sending eller henting av ditt prosjekt.
           </p>
         </div>
 

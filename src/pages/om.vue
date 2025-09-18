@@ -4,7 +4,7 @@ import { useHead } from '@vueuse/head'
 useHead({
   title: 'Om Marit - Quiltefryd | Erfaren quilter og syerske',
   meta: [
-    { name: 'description', content: 'Les om Marit Aslesen og hennes erfaring fra over 10 år med Quiltefryd i Tønsberg. Profesjonell longarm-quilting og sømtjenester.' }
+    { name: 'description', content: 'Les om Marit Aslesen og hennes erfaring fra nesten 10 år med Quiltefryd i Tønsberg. Profesjonell longarm-quilting og sømtjenester.' }
   ]
 })
 </script>
@@ -18,7 +18,7 @@ useHead({
           Om Marit
         </h1>
         <p class="text-lg text-gray-700 max-w-3xl">
-          Erfaring, lidenskap og kvalitet gjennom over 10 år med Quiltefryd
+          Erfaring, lidenskap og kvalitet gjennom nesten 10 år med Quiltefryd. Søm helt tilbake til ungdomstiden.
         </p>
       </div>
     </section>
@@ -36,15 +36,15 @@ useHead({
             
             <p class="text-gray-700 mb-4">
               Jeg heter Marit Aslesen og har hatt gleden av å drive den velkjente 
-              quiltbutikken <strong>Quiltefryd</strong> i Tønsberg i over 10 år. 
-              Jeg overtok butikken i 2016 og har, som jeg pleier å si, 
-              "ikke angret en eneste dag".
+              quiltbutikken <strong>Quiltefryd</strong> i Tønsberg i nesten 10 år.
+              Jeg overtok butikken i 2016. Det har vært mye hyggelig arbeid,
+              og masse hyggelige kunder.
             </p>
 
             <p class="text-gray-700 mb-4">
-              Gjennom årene med Quiltefryd har jeg hjulpet hundrevis av kunder med 
+              Gjennom årene med Quiltefryd har jeg hjulpet veldig mange kunder med
               deres quiltprosjekter - fra nybegynnere som trengte veiledning til 
-              erfarne quiltere som søkte spesielle stoffer og avanserte teknikker.
+              erfarne quiltere.
             </p>
 
             <p class="text-gray-700 mb-4">
@@ -59,7 +59,7 @@ useHead({
             </h2>
 
             <p class="text-gray-700 mb-4">
-              Med over 15 år i quilte- og sømbransjen har jeg opparbeidet meg bred 
+              Med mange år i quilte- og sømbransjen har jeg opparbeidet meg bred
               erfaring innen:
             </p>
 
@@ -67,14 +67,13 @@ useHead({
               <li>Profesjonell longarm-quilting med avanserte mønstre</li>
               <li>Tradisjonelle og moderne quilteteknikker</li>
               <li>Interiørsøm og hjemmetekstiler</li>
-              <li>Bunadstilpasning og festdrakter</li>
-              <li>Generell sømarbeid og reparasjoner</li>
+              <li>Generell sømarbeid</li>
             </ul>
 
             <p class="text-gray-700 mb-4">
-              Jeg holder meg kontinuerlig oppdatert på nye teknikker og trender, 
+              Jeg holder meg oppdatert på nye teknikker og trender,
               samtidig som jeg ivaretar de tradisjonelle håndverksmetodene som 
-              har blitt overført gjennom generasjoner.
+              har blitt brukt gjennom generasjoner.
             </p>
           </div>
 
@@ -139,10 +138,6 @@ useHead({
                 </div>
                 <div class="flex items-center gap-2">
                   <span class="text-quilt-burgundy">✓</span>
-                  <span class="font-medium">Punktlig levering</span>
-                </div>
-                <div class="flex items-center gap-2">
-                  <span class="text-quilt-burgundy">✓</span>
                   <span class="font-medium">Konkurransedyktige priser</span>
                 </div>
                 <div class="flex items-center gap-2">
@@ -176,25 +171,6 @@ useHead({
                 <p class="text-sm opacity-90">Quiltefryd</p>
               </div>
             </div>
-          </div>
-        </div>
-
-        <!-- Bottom CTA Section -->
-        <div class="mt-16 bg-gradient-to-br from-quilt-cream to-white rounded-2xl p-8 md:p-12 text-center">
-          <h2 class="text-3xl font-serif text-quilt-burgundy mb-4">
-            La oss skape noe vakkert sammen
-          </h2>
-          <p class="text-lg text-gray-700 mb-8 max-w-2xl mx-auto">
-            Enten du har en quiltetopp som trenger finish, gardiner som skal sys, 
-            eller en bunad som trenger justering - jeg er her for å hjelpe.
-          </p>
-          <div class="flex flex-col sm:flex-row gap-4 justify-center">
-            <RouterLink to="/tjenester" class="btn-secondary">
-              Se tjenester
-            </RouterLink>
-            <RouterLink to="/kontakt" class="btn-primary">
-              Ta kontakt
-            </RouterLink>
           </div>
         </div>
 

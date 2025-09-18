@@ -8,7 +8,7 @@ useHead({
   htmlAttrs: { lang: 'nb' },
   title: 'Quiltefryd - Quilt- og sømtjenester i Tønsberg | Marit Aslesen',
   meta: [
-    { name: 'description', content: 'Longarm-quilting, gardiner og puter, bunadsjustering og små reparasjoner. Erfaren quilter med over 10 års erfaring fra Quiltefryd.' },
+    { name: 'description', content: 'Longarm-quilting, gardiner og puter, bunadsjustering og små reparasjoner. Erfaren quilter med nesten 10 års erfaring fra Quiltefryd.' },
     { name: 'keywords', content: 'quilting Tønsberg, longarm quilting, bunad alterasjon Vestfold, gardiner sying, quiltefryd, Marit Aslesen' },
     { name: 'author', content: 'Marit Aslesen' },
     { property: 'og:title', content: 'Quiltefryd - Quilt- og sømtjenester i Tønsberg' },

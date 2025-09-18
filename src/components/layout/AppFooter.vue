@@ -14,11 +14,6 @@ const currentYear = computed(() => new Date().getFullYear())
           <h3 class="text-xl font-serif mb-4 text-quilt-cream">Kontakt</h3>
           <div class="space-y-2">
             <p>
-              <a href="tel:95195088" class="hover:text-quilt-cream transition-colors">
-                📞 95 19 50 88
-              </a>
-            </p>
-            <p>
               <a href="mailto:marit@quiltefryd.no" class="hover:text-quilt-cream transition-colors">
                 ✉️ marit@quiltefryd.no
               </a>
@@ -55,17 +50,16 @@ const currentYear = computed(() => new Date().getFullYear())
           </ul>
         </div>
 
-        <!-- Åpningstider -->
+        <!-- Tilgjengelighet -->
         <div>
-          <h3 class="text-xl font-serif mb-4 text-quilt-cream">Åpningstider</h3>
-          <p>Hverdager: 10:00 - 18:00</p>
-          <p class="text-sm opacity-90 mt-2">Etter avtale</p>
-          <div class="mt-4">
-            <RouterLink 
-              to="/kontakt" 
+          <h3 class="text-xl font-serif mb-4 text-quilt-cream">Tilgjengelig etter avtale</h3>
+          <p class="text-sm opacity-90 mb-4">Kontakt meg for å avtale tid som passer deg</p>
+          <div>
+            <RouterLink
+              to="/kontakt"
               class="inline-block bg-quilt-burgundy text-white px-6 py-2 rounded-lg hover:bg-opacity-90 transition-all"
             >
-              Bestill time
+              Ta kontakt
             </RouterLink>
           </div>
         </div>

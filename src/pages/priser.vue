@@ -113,7 +113,7 @@ useHead({
                   <td class="text-right px-6 py-4 font-medium">500,- pr. stk.</td>
                 </tr>
                 <tr>
-                  <td class="px-6 py-4">Sy spesialoppdrag</td>
+                  <td class="px-6 py-4">Andre typer sømoppdrag</td>
                   <td class="text-right px-6 py-4 font-medium">800,- pr. time</td>
                 </tr>
               </tbody>
@@ -137,7 +137,7 @@ useHead({
             Har du et prosjekt?
           </h2>
           <p class="text-lg text-gray-700 mb-8 max-w-2xl mx-auto">
-            Kontakt meg for et uforpliktende pristilbud. Jeg hjelper deg gjerne med å realisere dine ideer!
+            Kontakt meg for et uforpliktende pristilbud. Jeg hjelper deg gjerne!
           </p>
           <div class="flex flex-col sm:flex-row gap-4 justify-center">
             <a href="tel:95195088" class="btn-secondary">
