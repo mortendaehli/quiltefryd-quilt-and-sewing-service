@@ -144,7 +144,7 @@ useHead({
               Ring 95 19 50 88
             </a>
             <RouterLink to="/kontakt" class="btn-primary">
-              Send en melding
+              Ta kontakt
             </RouterLink>
           </div>
         </div>

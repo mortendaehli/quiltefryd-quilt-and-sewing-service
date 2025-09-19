@@ -13,8 +13,7 @@
                 hjulpet veldig mange kunder med deres sømprosjekter.
               </p>
               <p>
-                Med min profesjonelle <strong>Innova longarm-maskin</strong> kan jeg levere 
-                jevne, vakre quiltesømmer som holder i generasjoner.
+                Quilting på min <strong>Innova longarm-maskin</strong>..
               </p>
               <p>
                 Selv om butikken nå er stengt, fortsetter jeg å tilby mine tjenester 
@@ -24,7 +23,7 @@
             
             <div class="mt-8">
               <div class="text-center p-4 bg-white rounded-lg shadow-md max-w-xs mx-auto">
-                <div class="text-3xl font-bold text-quilt-burgundy">10</div>
+                <div class="text-3xl font-bold text-quilt-burgundy">>10</div>
                 <div class="text-sm text-gray-600">År med erfaring</div>
               </div>
             </div>

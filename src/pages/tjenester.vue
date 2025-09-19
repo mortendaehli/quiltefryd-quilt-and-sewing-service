@@ -4,7 +4,7 @@ import { useHead } from '@vueuse/head'
 useHead({
   title: 'Tjenester - Quiltefryd | Longarm-quilting, sømtjenester i Tønsberg',
   meta: [
-    { name: 'description', content: 'Profesjonell longarm-quilting, gardiner, puter, bunadsjustering og reparasjon. Se alle våre sømtjenester.' }
+    { name: 'description', content: 'Profesjonell longarm-quilting, gardiner, puter og reparasjon. Se alle våre sømtjenester.' }
   ]
 })
 </script>
@@ -150,6 +150,10 @@ useHead({
               </h2>
               <div class="prose prose-lg text-gray-700 space-y-4">
                 <p>
+                  Har du et sømprosjekt som ikke passer inn i kategoriene over?
+                  Ta kontakt!
+                </p>
+                <p>
                   Pris varierer med arbeidets omfang. Du får alltid prisoverslag før
                   jeg starter arbeidet.
                 </p>
@@ -176,25 +180,6 @@ useHead({
         </div>
 
         <hr class="border-quilt-beige" />
-
-        <!-- Andre oppdrag -->
-        <div id="andre-oppdrag" class="scroll-mt-20">
-          <div class="bg-gradient-to-br from-quilt-cream to-white rounded-2xl p-8 md:p-12 text-center">
-            <h2 class="text-3xl font-serif text-quilt-burgundy mb-4">
-              Andre oppdrag?
-            </h2>
-            <p class="text-lg text-gray-700 max-w-2xl mx-auto mb-8">
-              Har du et sømprosjekt som ikke passer inn i kategoriene over? 
-              Ta kontakt!
-            </p>
-            <p class="text-gray-600 mb-8">
-              Jeg er alltid åpen for nye utfordringer og kreative prosjekter.
-            </p>
-            <RouterLink to="/kontakt" class="btn-primary">
-              Ta kontakt
-            </RouterLink>
-          </div>
-        </div>
 
       </div>
     </section>

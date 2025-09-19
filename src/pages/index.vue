@@ -7,7 +7,7 @@ import TrustSection from '@/components/home/TrustSection.vue'
 useHead({
   title: 'Quiltefryd - Quilt- og sømtjenester i Tønsberg | Marit Aslesen',
   meta: [
-    { name: 'description', content: 'Longarm-quilting, gardiner og puter, bunadsjustering og små reparasjoner. Erfaren quilter med nesten 10 års erfaring fra Quiltefryd.' }
+    { name: 'description', content: 'Longarm-quilting, gardiner og puter og små reparasjoner. Erfaren quilter med nesten 10 års erfaring fra Quiltefryd.' }
   ]
 })
 </script>

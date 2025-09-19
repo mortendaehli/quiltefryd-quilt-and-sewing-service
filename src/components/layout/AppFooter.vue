@@ -34,17 +34,12 @@ const currentYear = computed(() => new Date().getFullYear())
             </li>
             <li>
               <RouterLink to="/tjenester#interiorsom" class="hover:text-quilt-cream transition-colors">
-                Gardiner og puter
+                Interiørsøm - Gardiner og puter
               </RouterLink>
             </li>
             <li>
-              <RouterLink to="/tjenester#bunad" class="hover:text-quilt-cream transition-colors">
-                Bunadsjustering
-              </RouterLink>
-            </li>
-            <li>
-              <RouterLink to="/tjenester#reparasjon-omsom" class="hover:text-quilt-cream transition-colors">
-                Reparasjon og omsøm
+              <RouterLink to="/tjenester#diverse-som" class="hover:text-quilt-cream transition-colors">
+                Diverse søm
               </RouterLink>
             </li>
           </ul>

@@ -68,14 +68,14 @@ const services = [
     icon: 'Quilt' as const
   },
   {
-    title: 'Gardiner og puter',
+    title: 'Interiørsøm - Gardiner og puter',
     description: 'Skreddersydde gardiner, puter og annen interiørsøm etter dine mål og ønsker.',
     link: '/tjenester#interiorsom',
     icon: 'Curtain' as const
   },
   {
     title: 'Diverse søm',
-    description: 'Ulike sømoppgaver som bukseopplegg, glidelåsbytte, reparasjoner og andre tilpasninger.',
+    description: 'Ulike sømoppdrag ved forespørsel.',
     link: '/tjenester#diverse-som',
     icon: 'Scissors' as const
   }

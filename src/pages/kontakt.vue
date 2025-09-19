@@ -27,16 +27,28 @@ useHead({
     <!-- Contact Content -->
     <section class="py-16">
       <div class="container-custom">
-        <div class="grid grid-cols-1 lg:grid-cols-2 gap-12">
-          
+        <div class="flex justify-center">
+
           <!-- Contact Information -->
-          <div>
-            <h2 class="text-2xl md:text-3xl font-serif text-quilt-burgundy mb-6">
+          <div class="max-w-lg w-full">
+            <h2 class="text-2xl md:text-3xl font-serif text-quilt-burgundy mb-6 text-center">
               Kontaktinformasjon
             </h2>
             
             <!-- Contact Cards -->
             <div class="space-y-4 mb-8">
+
+              <a href="tel:95195088" class="block bg-white rounded-lg shadow-md p-6 hover:shadow-lg transition-shadow">
+                <div class="flex items-center gap-4">
+                  <div class="w-12 h-12 bg-quilt-cream rounded-full flex items-center justify-center text-2xl">
+                    📞
+                  </div>
+                  <div>
+                    <p class="text-sm text-gray-600">Telefon</p>
+                    <p class="text-lg font-medium text-quilt-forest">951 95 088</p>
+                  </div>
+                </div>
+              </a>
 
               <a href="mailto:marit@quiltefryd.no" class="block bg-white rounded-lg shadow-md p-6 hover:shadow-lg transition-shadow">
                 <div class="flex items-center gap-4">
@@ -106,14 +118,16 @@ useHead({
         </div>
 
         <!-- Map/Directions Section -->
-        <div class="mt-16 bg-white rounded-2xl shadow-lg p-8 text-center">
-          <h2 class="text-2xl font-serif text-quilt-burgundy mb-4">
-            Besøksadresse
-          </h2>
-          <p class="text-gray-700 mb-4">
-            Jeg bor til i Tønsberg. Nøyaktig adresse oppgis når vi har avtalt
-            tid for levering/sending eller henting av ditt prosjekt.
-          </p>
+        <div class="flex justify-center mt-16">
+          <div class="max-w-lg w-full bg-white rounded-2xl shadow-lg p-8 text-center">
+            <h2 class="text-2xl font-serif text-quilt-burgundy mb-4">
+              Besøksadresse
+            </h2>
+            <p class="text-gray-700 mb-4">
+              Jeg bor til i Tønsberg. Nøyaktig adresse oppgis når vi har avtalt
+              tid for levering/sending eller henting av ditt prosjekt.
+            </p>
+          </div>
         </div>
 
       </div>

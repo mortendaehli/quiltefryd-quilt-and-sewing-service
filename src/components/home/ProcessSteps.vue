@@ -53,7 +53,7 @@
           </a>
           <router-link to="/kontakt" class="btn-primary group">
             <span class="inline-flex items-center gap-2">
-              Send melding
+              Ta kontakt
               <svg class="w-5 h-5 group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 7l5 5m0 0l-5 5m5-5H6" />
               </svg>
