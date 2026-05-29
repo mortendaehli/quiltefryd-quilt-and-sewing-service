@@ -16,6 +16,7 @@ const route = useRoute()
 const navItems = [
   { href: '/', label: 'Hjem' },
   { href: '/tjenester', label: 'Tjenester' },
+  { href: '/monstre', label: 'Mønstre' },
   { href: '/priser', label: 'Priser' },
   { href: '/om', label: 'Om Marit' },
   { href: '/kontakt', label: 'Kontakt' },

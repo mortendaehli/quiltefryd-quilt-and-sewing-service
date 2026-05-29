@@ -42,7 +42,7 @@
 
       <div class="text-center mt-16 animate-fade-in">
         <p class="text-lg text-gray-700 mb-6">
-          Klar for å komme i gang med ditt sømprosjekt?
+          Klar for å komme i gang med ditt quilteprosjekt?
         </p>
         <div class="flex flex-col sm:flex-row gap-4 justify-center">
           <a href="tel:95195088" class="btn-secondary group">

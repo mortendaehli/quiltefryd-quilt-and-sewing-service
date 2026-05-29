@@ -2,9 +2,9 @@
 import { useHead } from '@vueuse/head'
 
 useHead({
-  title: 'Tjenester - Quiltefryd | Longarm-quilting, sømtjenester i Tønsberg',
+  title: 'Tjenester - Quiltefryd | Longarm-quilting i Tønsberg',
   meta: [
-    { name: 'description', content: 'Profesjonell longarm-quilting, gardiner, puter og reparasjon. Se alle våre sømtjenester.' }
+    { name: 'description', content: 'Profesjonell longarm-quilting i Tønsberg. Se alle våre quiltetjenester.' }
   ]
 })
 </script>
@@ -18,7 +18,7 @@ useHead({
           Mine tjenester
         </h1>
         <p class="text-lg text-gray-700 max-w-3xl">
-          Jeg hjelper deg med alt fra longarm-quilting og diverse søm.
+          Jeg hjelper deg med longarm-quilting.
           Alle oppdrag utføres med omhu og fokus på kvalitet.
         </p>
       </div>
@@ -48,7 +48,14 @@ useHead({
                   <li>✓ Inkludert tråd i prisen</li>
                   <li>✓ Jeg har vatt til tepper</li>
                   <li>✓ Profesjonell finish og kvalitet</li>
+                  <li>✓ Minimumspris kr 700,- per teppe eller løper</li>
                 </ul>
+
+                <p class="mt-4">
+                  <RouterLink to="/monstre" class="text-quilt-burgundy font-medium hover:underline">
+                    Se alle quiltemønstre →
+                  </RouterLink>
+                </p>
 
                 <h3 class="text-xl font-serif text-quilt-forest mt-6 mb-3">
                   Levering og henting:
@@ -79,108 +86,6 @@ useHead({
           </div>
         </div>
 
-        <hr class="border-quilt-beige" />
-
-        <!-- Interiørsøm -->
-        <div id="interiorsom" class="scroll-mt-20">
-          <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 items-start">
-            <div class="lg:order-2">
-              <h2 class="text-3xl font-serif text-quilt-burgundy mb-4">
-                Interiørsøm - Gardiner og puter
-              </h2>
-              <div class="prose prose-lg text-gray-700 space-y-4">
-                <p>
-                  Skreddersydde løsninger for ditt hjem. Jeg syr gardiner, puter og annen 
-                  interiørtekstil etter dine mål og ønsker.
-                </p>
-                
-                <h3 class="text-xl font-serif text-quilt-forest mt-6 mb-3">
-                  Priser fra:
-                </h3>
-                <ul class="space-y-2">
-                  <li>✓ Legge opp gardiner faste stoffer: <strong>250,- pr stk</strong></li>
-                  <li>✓ Legge opp lingardiner: <strong>300,- pr stk</strong></li>
-                  <li>✓ Legge opp gardiner med fór: <strong>450,- pr stk</strong></li>
-                  <li>✓ Sy liftgardin under 1 meter: <strong>2000,- pr stk</strong></li>
-                  <li>✓ Sy liftgardin 1-2 meter: <strong>2800,- pr stk</strong></li>
-                  <li>✓ Sy pyntepute ca 50x50 cm med glidelås: <strong>500,- pr stk</strong></li>
-                </ul>
-
-                <p class="bg-quilt-cream p-4 rounded-lg text-sm">
-                  <strong>Mønsttertilpasning:</strong> Tillegg på 30% hvis mønster må tilpasses ved liftgardiner.
-                </p>
-                
-                <h3 class="text-xl font-serif text-quilt-forest mt-6 mb-3">
-                  Spesialoppdrag:
-                </h3>
-                <p>
-                  Timesbetaling på <strong>800,- per time</strong> for spesialoppdrag og tilpassede løsninger.
-                </p>
-              </div>
-              
-              <RouterLink to="/kontakt" class="btn-primary inline-block mt-6">
-                Ta kontakt
-              </RouterLink>
-            </div>
-            
-            <div class="bg-quilt-cream rounded-xl p-8 lg:order-1">
-              <div class="aspect-square rounded-lg overflow-hidden">
-                <img 
-                  src="/images/interior.png" 
-                  alt="Elegante gardiner og dekorative puter - interiørsøm av Marit"
-                  class="w-full h-full object-cover"
-                />
-              </div>
-              <p class="text-center mt-4 text-sm text-gray-600">
-                Fra kr 250,- (se prisliste)
-              </p>
-            </div>
-          </div>
-        </div>
-
-
-        <hr class="border-quilt-beige" />
-
-        <!-- Diverse søm -->
-        <div id="diverse-som" class="scroll-mt-20">
-          <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 items-start">
-            <div class="lg:order-2">
-              <h2 class="text-3xl font-serif text-quilt-burgundy mb-4">
-                Diverse søm
-              </h2>
-              <div class="prose prose-lg text-gray-700 space-y-4">
-                <p>
-                  Har du et sømprosjekt som ikke passer inn i kategoriene over?
-                  Ta kontakt!
-                </p>
-                <p>
-                  Pris varierer med arbeidets omfang. Du får alltid prisoverslag før
-                  jeg starter arbeidet.
-                </p>
-              </div>
-
-              <RouterLink to="/kontakt" class="btn-primary inline-block mt-6">
-                Ta kontakt
-              </RouterLink>
-            </div>
-
-            <div class="bg-quilt-cream rounded-xl p-8 lg:order-1">
-              <div class="aspect-square rounded-lg overflow-hidden">
-                <img
-                  src="/images/IMG_2093.jpg"
-                  alt="Fargerik quilt med livlige mønstre og ekspertise"
-                  class="w-full h-full object-cover"
-                />
-              </div>
-              <p class="text-center mt-4 text-sm text-gray-600">
-                Fra kr 150
-              </p>
-            </div>
-          </div>
-        </div>
-
-        <hr class="border-quilt-beige" />
-
       </div>
     </section>
 
@@ -198,7 +103,7 @@ useHead({
               Må jeg komme til Tønsberg for å levere?
             </h3>
             <p class="text-gray-700">
-              Nei, du kan sende quiltetopper og diverse syoppdrag per post.
+              Nei, du kan sende quiltetopper per post.
               Vi avtaler frakt og retur når du tar kontakt.
             </p>
           </div>

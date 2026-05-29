@@ -2,9 +2,9 @@
 import { useHead } from '@vueuse/head'
 
 useHead({
-  title: 'Priser - Quiltefryd | Quilting og søm i Tønsberg',
+  title: 'Priser - Quiltefryd | Longarm-quilting i Tønsberg',
   meta: [
-    { name: 'description', content: 'Prisliste for quilting av tepper og diverse sømtjenester som gardiner, puter og liftgardiner. Se priser for E2E-quilting og spesialoppdrag.' }
+    { name: 'description', content: 'Prisliste for longarm-quilting av tepper. Se priser for E2E-quilting og spesialoppdrag.' }
   ]
 })
 </script>
@@ -45,10 +45,24 @@ useHead({
                   <td class="px-6 py-4">
                     <div>
                       <p class="font-medium">E2E-quilting (heldekkende mønster)</p>
-                      <p class="text-sm text-gray-600">Inkluderer tråd. Jeg har mange mønstre å velge mellom.</p>
+                      <p class="text-sm text-gray-600">
+                        Inkluderer tråd. Prisen varierer med valg av mønster —
+                        <RouterLink to="/monstre" class="text-quilt-burgundy hover:underline">
+                          se alle mønstre
+                        </RouterLink>.
+                      </p>
                     </div>
                   </td>
-                  <td class="text-right px-6 py-4 font-medium">350-400 kr pr. m²</td>
+                  <td class="text-right px-6 py-4 font-medium">300-390 kr pr. m²</td>
+                </tr>
+                <tr>
+                  <td class="px-6 py-4">
+                    <div>
+                      <p class="font-medium">Minimumspris</p>
+                      <p class="text-sm text-gray-600">Per teppe eller løper.</p>
+                    </div>
+                  </td>
+                  <td class="text-right px-6 py-4 font-medium">700,- kr</td>
                 </tr>
                  <tr>
                   <td class="px-6 py-4">
@@ -58,63 +72,6 @@ useHead({
                     </div>
                   </td>
                   <td class="text-right px-6 py-4 font-medium">Pris på forespørsel</td>
-                </tr>
-              </tbody>
-            </table>
-          </div>
-        </div>
-
-        <!-- Sewing Services Prices -->
-        <div class="mb-12">
-          <h2 class="text-2xl md:text-3xl font-serif text-quilt-burgundy mb-6">
-            Søm
-          </h2>
-          <div class="bg-white rounded-xl shadow-lg overflow-hidden">
-            <table class="w-full">
-              <thead class="bg-quilt-cream">
-                <tr>
-                  <th class="text-left px-6 py-4 font-serif text-quilt-forest">Type arbeid</th>
-                  <th class="text-right px-6 py-4 font-serif text-quilt-forest">Priser fra</th>
-                </tr>
-              </thead>
-              <tbody class="divide-y divide-gray-200">
-                <tr>
-                  <td class="px-6 py-4">Legge opp gardiner (faste stoffer)</td>
-                  <td class="text-right px-6 py-4 font-medium">250,- pr. stk.</td>
-                </tr>
-                <tr>
-                  <td class="px-6 py-4">Legge opp lingardiner</td>
-                  <td class="text-right px-6 py-4 font-medium">300,- pr. stk.</td>
-                </tr>
-                <tr>
-                  <td class="px-6 py-4">Legge opp gardiner med fór</td>
-                  <td class="text-right px-6 py-4 font-medium">450,- pr. stk.</td>
-                </tr>
-                <tr>
-                  <td class="px-6 py-4">
-                    <div>
-                      <p class="font-medium">Sy liftgardiner under 1 meter</p>
-                      <p class="text-sm text-gray-600">Tillegg på 30% hvis mønster må tilpasses.</p>
-                    </div>
-                  </td>
-                  <td class="text-right px-6 py-4 font-medium">2000,- pr. stk.</td>
-                </tr>
-                <tr>
-                  <td class="px-6 py-4">
-                    <div>
-                      <p class="font-medium">Sy liftgardin 1-2 meter</p>
-                      <p class="text-sm text-gray-600">Tillegg på 30% hvis mønster må tilpasses.</p>
-                    </div>
-                  </td>
-                  <td class="text-right px-6 py-4 font-medium">2800,- pr. stk.</td>
-                </tr>
-                <tr>
-                  <td class="px-6 py-4">Sy pyntepute ca. 50x50 cm med glidelås</td>
-                  <td class="text-right px-6 py-4 font-medium">500,- pr. stk.</td>
-                </tr>
-                <tr>
-                  <td class="px-6 py-4">Andre typer sømoppdrag</td>
-                  <td class="text-right px-6 py-4 font-medium">800,- pr. time</td>
                 </tr>
               </tbody>
             </table>

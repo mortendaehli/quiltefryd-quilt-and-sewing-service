@@ -5,9 +5,9 @@ import ServiceCards from '@/components/home/ServiceCards.vue'
 import TrustSection from '@/components/home/TrustSection.vue'
 
 useHead({
-  title: 'Quiltefryd - Quilt- og sømtjenester i Tønsberg | Marit Aslesen',
+  title: 'Quiltefryd - Longarm-quilting i Tønsberg | Marit Aslesen',
   meta: [
-    { name: 'description', content: 'Longarm-quilting, gardiner og puter og små reparasjoner. Erfaren quilter med nesten 10 års erfaring fra Quiltefryd.' }
+    { name: 'description', content: 'Profesjonell longarm-quilting i Tønsberg. Erfaren quilter med nesten 10 års erfaring fra Quiltefryd.' }
   ]
 })
 </script>

@@ -4,7 +4,7 @@ import { useHead } from '@vueuse/head'
 useHead({
   title: 'Kontakt - Quiltefryd | Ta kontakt for pristilbud',
   meta: [
-    { name: 'description', content: 'Kontakt Marit Aslesen for quilting og sømtjenester i Tønsberg. Ring 95 19 50 88 eller send melding.' }
+    { name: 'description', content: 'Kontakt Marit Aslesen for longarm-quilting i Tønsberg. Ring 95 19 50 88 eller send melding.' }
   ]
 })
 </script>

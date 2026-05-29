@@ -10,7 +10,7 @@
             <div class="space-y-4 text-gray-700">
               <p class="text-lg">
                 Gjennom nesten 10 år som driver av <strong>Quiltefryd</strong> i Tønsberg har jeg
-                hjulpet veldig mange kunder med deres sømprosjekter.
+                hjulpet veldig mange kunder med deres quilteprosjekter.
               </p>
               <p>
                 Quilting på min <strong>Innova longarm-maskin</strong>..

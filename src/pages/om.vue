@@ -2,9 +2,9 @@
 import { useHead } from '@vueuse/head'
 
 useHead({
-  title: 'Om Marit - Quiltefryd | Erfaren quilter og syerske',
+  title: 'Om Marit - Quiltefryd | Erfaren quilter',
   meta: [
-    { name: 'description', content: 'Les om Marit Aslesen og hennes erfaring fra nesten 10 år med Quiltefryd i Tønsberg. Profesjonell longarm-quilting og sømtjenester.' }
+    { name: 'description', content: 'Les om Marit Aslesen og hennes erfaring fra nesten 10 år med Quiltefryd i Tønsberg. Profesjonell longarm-quilting.' }
   ]
 })
 </script>
@@ -18,7 +18,7 @@ useHead({
           Om Marit
         </h1>
         <p class="text-lg text-gray-700 max-w-3xl">
-          Erfaring, lidenskap og kvalitet gjennom nesten 10 år med Quiltefryd. Søm helt tilbake til ungdomstiden.
+          Erfaring, lidenskap og kvalitet gjennom nesten 10 år med Quiltefryd. Quilting helt tilbake til ungdomstiden.
         </p>
       </div>
     </section>
@@ -51,7 +51,7 @@ useHead({
               Nå som butikken er stengt i forbindelse med min pensjonering, 
               fortsetter jeg å tilby mine tjenester fra hjemmet mitt. Dette gir 
               meg muligheten til å fokusere på det jeg liker aller best: 
-              å hjelpe folk med å fullføre sine sømprosjekter med kvalitet og omhu.
+              å hjelpe folk med å fullføre sine quilteprosjekter med kvalitet og omhu.
             </p>
 
             <h2 class="text-2xl md:text-3xl font-serif text-quilt-burgundy mb-6 mt-8">
@@ -59,15 +59,13 @@ useHead({
             </h2>
 
             <p class="text-gray-700 mb-4">
-              Med mange år i quilte- og sømbransjen har jeg opparbeidet meg bred
+              Med mange år i quiltebransjen har jeg opparbeidet meg bred
               erfaring innen:
             </p>
 
             <ul class="list-disc list-inside space-y-2 text-gray-700 mb-6">
               <li>Profesjonell longarm-quilting med avanserte mønstre</li>
               <li>Tradisjonelle og moderne quilteteknikker</li>
-              <li>Interiørsøm og hjemmetekstiler</li>
-              <li>Generell sømarbeid</li>
             </ul>
 
             <p class="text-gray-700 mb-4">
@@ -102,8 +100,8 @@ useHead({
                   <div>
                     <h4 class="font-semibold text-gray-900">Moderne symaskiner</h4>
                     <p class="text-gray-600 text-sm mt-1">
-                      Flere høykvalitets symaskiner for presisjon i alle typer 
-                      sømarbeid.
+                      Flere høykvalitets symaskiner for presisjon i alt
+                      quiltearbeid.
                     </p>
                   </div>
                 </div>
@@ -130,7 +128,7 @@ useHead({
               <div class="space-y-3">
                 <div class="flex items-center gap-2">
                   <span class="text-quilt-burgundy">✓</span>
-                  <span class="font-medium">Kvalitet i hver søm</span>
+                  <span class="font-medium">Kvalitet i hvert sting</span>
                 </div>
                 <div class="flex items-center gap-2">
                   <span class="text-quilt-burgundy">✓</span>
@@ -150,7 +148,7 @@ useHead({
             <!-- Quote -->
             <div class="bg-white rounded-xl shadow-lg p-8 border-l-4 border-quilt-burgundy">
               <p class="italic text-gray-700 text-lg mb-4">
-                "Hver quilte og hvert sømprosjekt er unikt. Jeg behandler alle 
+                "Hver quilte er unik. Jeg behandler alle
                 oppdrag med samme omhu og respekt, uansett størrelse."
               </p>
               <p class="text-quilt-forest font-serif">

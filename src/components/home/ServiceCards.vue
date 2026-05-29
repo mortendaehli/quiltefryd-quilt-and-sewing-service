@@ -4,14 +4,14 @@
       <div class="text-center mb-16 max-w-3xl mx-auto">
         <span class="text-quilt-gold uppercase tracking-[0.2em] text-sm font-medium">Tjenester</span>
         <h2 class="text-4xl md:text-5xl font-serif text-quilt-forest mb-6 mt-3 font-light">
-          Mine sømtjenester
+          Mine tjenester
         </h2>
         <p class="text-lg text-gray-600 leading-relaxed">
-          Jeg tilbyr et bredt spekter av sømtjenester med fokus på kvalitet og håndverk
+          Profesjonell longarm-quilting med fokus på kvalitet og håndverk
         </p>
       </div>
 
-      <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+      <div class="grid grid-cols-1 max-w-2xl mx-auto gap-8">
         <router-link 
           v-for="(service, index) in services" 
           :key="index" 
@@ -66,18 +66,6 @@ const services = [
     description: 'Profesjonell quilting med longarm-maskin. Kant-til-kant mønster, vatt og bakstykke.',
     link: '/tjenester#longarm-quilting',
     icon: 'Quilt' as const
-  },
-  {
-    title: 'Interiørsøm - Gardiner og puter',
-    description: 'Skreddersydde gardiner, puter og annen interiørsøm etter dine mål og ønsker.',
-    link: '/tjenester#interiorsom',
-    icon: 'Curtain' as const
-  },
-  {
-    title: 'Diverse søm',
-    description: 'Ulike sømoppdrag ved forespørsel.',
-    link: '/tjenester#diverse-som',
-    icon: 'Scissors' as const
   }
 ]
 </script>

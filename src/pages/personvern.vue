@@ -36,7 +36,7 @@ useHead({
           </h3>
           <ul class="list-disc list-inside space-y-2 text-gray-700">
             <li>Navn og kontaktinformasjon (telefon, e-post)</li>
-            <li>Informasjon om ditt sømprosjekt</li>
+            <li>Informasjon om ditt quilteprosjekt</li>
             <li>Leveringsadresse ved behov</li>
           </ul>
 

@@ -6,13 +6,13 @@ import AppFooter from './components/layout/AppFooter.vue'
 // Global SEO setup
 useHead({
   htmlAttrs: { lang: 'nb' },
-  title: 'Quiltefryd - Quilt- og sømtjenester i Tønsberg | Marit Aslesen',
+  title: 'Quiltefryd - Longarm-quilting i Tønsberg | Marit Aslesen',
   meta: [
-    { name: 'description', content: 'Longarm-quilting, gardiner og puter, og små reparasjoner. Erfaren quilter med nesten 10 års erfaring fra Quiltefryd.' },
-    { name: 'keywords', content: 'quilting Tønsberg, longarm quilting, vestfold, gardiner sying, quiltefryd, Marit Aslesen' },
+    { name: 'description', content: 'Profesjonell longarm-quilting i Tønsberg. Erfaren quilter med nesten 10 års erfaring fra Quiltefryd.' },
+    { name: 'keywords', content: 'quilting Tønsberg, longarm quilting, vestfold, quiltefryd, Marit Aslesen' },
     { name: 'author', content: 'Marit Aslesen' },
-    { property: 'og:title', content: 'Quiltefryd - Quilt- og sømtjenester i Tønsberg' },
-    { property: 'og:description', content: 'Longarm-quilting, gardiner og puter og små reparasjoner.' },
+    { property: 'og:title', content: 'Quiltefryd - Longarm-quilting i Tønsberg' },
+    { property: 'og:description', content: 'Profesjonell longarm-quilting med nesten 10 års erfaring.' },
     { property: 'og:url', content: 'https://quiltefryd.no' },
     { property: 'og:site_name', content: 'Quiltefryd' },
     { property: 'og:locale', content: 'nb_NO' },
@@ -25,7 +25,7 @@ useHead({
       children: JSON.stringify({
         '@context': 'https://schema.org',
         '@type': 'LocalBusiness',
-        name: 'Quiltefryd – Quilt og Søm ved Marit Aslesen',
+        name: 'Quiltefryd – Longarm-quilting ved Marit Aslesen',
         image: 'https://quiltefryd.no/images/IMG_2087.jpg',
         email: 'marit@quiltefryd.no',
         telephone: '+4795195088',
@@ -36,7 +36,7 @@ useHead({
         },
         areaServed: 'NO',
         url: 'https://quiltefryd.no',
-        description: 'Longarm-quilting, interiørsøm (gardiner, puter) og enkle bunadsjobber. Erfaren quilter, tidligere driver av Quiltefryd.',
+        description: 'Profesjonell longarm-quilting. Erfaren quilter, tidligere driver av Quiltefryd.',
         priceRange: 'NOK',
         openingHoursSpecification: {
           '@type': 'OpeningHoursSpecification',

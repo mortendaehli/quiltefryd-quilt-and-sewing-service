@@ -11,12 +11,12 @@
             <span class="text-quilt-gold uppercase tracking-[0.2em] text-sm font-medium">Velkommen til</span>
           </div>
           <h1 class="text-5xl md:text-6xl lg:text-7xl font-serif text-quilt-burgundy leading-[1.1] font-light">
-            Quilt- og sømtjenester
+            Longarm-quilting
             <span class="block text-3xl md:text-4xl lg:text-5xl text-quilt-forest mt-2">i Tønsberg</span>
           </h1>
           <p class="text-lg md:text-xl text-gray-700 leading-relaxed max-w-xl">
-            Longarm-quilting, gardiner og puter, diverse søm.
-            Med nesten 10 års erfaring fra Quiltefryd hjelper jeg deg med dine sømprosjekter.
+            Profesjonell longarm-quilting med kvalitet og håndverk.
+            Med nesten 10 års erfaring fra Quiltefryd hjelper jeg deg med dine quilteprosjekter.
           </p>
           
           <div class="flex flex-col sm:flex-row gap-4 pt-4">

@@ -33,13 +33,8 @@ const currentYear = computed(() => new Date().getFullYear())
               </RouterLink>
             </li>
             <li>
-              <RouterLink to="/tjenester#interiorsom" class="hover:text-quilt-cream transition-colors">
-                Interiørsøm - Gardiner og puter
-              </RouterLink>
-            </li>
-            <li>
-              <RouterLink to="/tjenester#diverse-som" class="hover:text-quilt-cream transition-colors">
-                Diverse søm
+              <RouterLink to="/monstre" class="hover:text-quilt-cream transition-colors">
+                Quiltemønstre
               </RouterLink>
             </li>
           </ul>
@@ -64,7 +59,7 @@ const currentYear = computed(() => new Date().getFullYear())
         <div class="flex flex-col md:flex-row justify-between items-center space-y-4 md:space-y-0">
           <div class="text-center md:text-left">
             <p>&copy; {{ currentYear }} Quiltefryd - Marit Aslesen</p>
-            <p class="text-sm opacity-90">Quilt- og sømtjenester i Tønsberg</p>
+            <p class="text-sm opacity-90">Longarm-quilting i Tønsberg</p>
           </div>
           <div class="flex space-x-4 text-sm">
             <RouterLink to="/personvern" class="hover:text-quilt-cream transition-colors">
