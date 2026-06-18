@@ -3,6 +3,14 @@ import { useHead } from '@vueuse/head'
 import AppHeader from './components/layout/AppHeader.vue'
 import AppFooter from './components/layout/AppFooter.vue'
 
+const focusMainContent = () => {
+  const mainContent = document.getElementById('main-content')
+  if (!mainContent) return
+
+  mainContent.focus({ preventScroll: true })
+  mainContent.scrollIntoView({ block: 'start' })
+}
+
 // Global SEO setup
 useHead({
   htmlAttrs: { lang: 'nb' },
@@ -52,8 +60,11 @@ useHead({
 
 <template>
   <div class="min-h-screen flex flex-col">
+    <a href="#main-content" class="skip-link" @click.prevent="focusMainContent">
+      Hopp til hovedinnhold
+    </a>
     <AppHeader />
-    <main class="flex-grow">
+    <main id="main-content" class="flex-grow" tabindex="-1">
       <RouterView />
     </main>
     <AppFooter />

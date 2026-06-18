@@ -1,14 +1,14 @@
 <template>
   <section class="relative bg-gradient-to-br from-quilt-cream via-white to-quilt-beige overflow-hidden min-h-[80vh] flex items-center">
     <!-- Pattern overlay -->
-    <QuiltPattern class="text-quilt-moss pointer-events-none opacity-50" />
+    <QuiltPattern class="text-quilt-moss pointer-events-none opacity-50" aria-hidden="true" />
     
     <div class="container-custom py-20 md:py-32 relative z-10">
       <div class="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
         <!-- Text Content -->
         <div class="animate-fade-in space-y-6">
           <div class="inline-block">
-            <span class="text-quilt-gold uppercase tracking-[0.2em] text-sm font-medium">Velkommen til</span>
+            <span class="text-quilt-bronze uppercase tracking-[0.2em] text-sm font-medium">Velkommen til</span>
           </div>
           <h1 class="text-5xl md:text-6xl lg:text-7xl font-serif text-quilt-burgundy leading-[1.1] font-light">
             Longarm-quilting
@@ -24,9 +24,9 @@
               <SewingIcons name="Button" class="w-5 h-5 opacity-70 group-hover:opacity-100 transition-opacity" />
               Kontakt meg
             </router-link>
-            <router-link to="/tjenester" class="btn-secondary text-center inline-flex items-center justify-center gap-2 group">
+            <router-link to="/monstre" class="btn-secondary text-center inline-flex items-center justify-center gap-2 group">
               <SewingIcons name="Thread" class="w-5 h-5 opacity-70 group-hover:opacity-100 transition-opacity" />
-              Se tjenester
+              Se Quiltemønstre og priser
             </router-link>
           </div>
 
@@ -34,13 +34,13 @@
           <div class="mt-12 flex flex-wrap gap-8 text-sm">
             <div class="flex items-center gap-3">
               <div class="w-8 h-8 rounded-full bg-quilt-burgundy/10 flex items-center justify-center">
-                <span class="text-quilt-burgundy text-lg">✓</span>
+                <span class="text-quilt-burgundy text-lg" aria-hidden="true">✓</span>
               </div>
               <span class="text-gray-700 font-medium">Erfaren quilter</span>
             </div>
             <div class="flex items-center gap-3">
               <div class="w-8 h-8 rounded-full bg-quilt-burgundy/10 flex items-center justify-center">
-                <span class="text-quilt-burgundy text-lg">✓</span>
+                <span class="text-quilt-burgundy text-lg" aria-hidden="true">✓</span>
               </div>
               <span class="text-gray-700 font-medium">Longarm-maskin</span>
             </div>
@@ -51,12 +51,14 @@
         <div class="relative">
           <div class="relative h-[450px] lg:h-[600px] rounded-3xl overflow-hidden shadow-2xl animate-slide-up transform rotate-1 hover:rotate-0 transition-transform duration-500">
             <video
-              autoplay
+              ref="heroVideo"
+              :autoplay="!prefersReducedMotion"
               muted
               playsinline
-              loop
+              :loop="!prefersReducedMotion"
               preload="auto"
               :poster="heroPoster"
+              aria-hidden="true"
               class="w-full h-full object-cover object-left"
             >
               <source :src="heroWebm" type="video/webm" />
@@ -68,8 +70,8 @@
             </div>
           </div>
           <!-- Decorative corner accent -->
-          <div class="absolute -bottom-4 -right-4 w-24 h-24 bg-quilt-gold/20 rounded-full blur-2xl" />
-          <div class="absolute -top-4 -left-4 w-32 h-32 bg-quilt-burgundy/10 rounded-full blur-3xl" />
+          <div class="absolute -bottom-4 -right-4 w-24 h-24 bg-quilt-gold/20 rounded-full blur-2xl" aria-hidden="true" />
+          <div class="absolute -top-4 -left-4 w-32 h-32 bg-quilt-burgundy/10 rounded-full blur-3xl" aria-hidden="true" />
         </div>
       </div>
     </div>
@@ -77,9 +79,35 @@
 </template>
 
 <script setup lang="ts">
+import { onBeforeUnmount, onMounted, ref } from 'vue'
 import QuiltPattern from '@/components/shared/QuiltPattern.vue'
 import SewingIcons from '@/components/icons/SewingIcons.vue'
 import heroMp4 from '@/assets/videos/hero.mp4'
 import heroWebm from '@/assets/videos/hero.webm'
 import heroPoster from '@/assets/videos/hero-poster.jpg'
+
+const heroVideo = ref<HTMLVideoElement | null>(null)
+const prefersReducedMotion = ref(false)
+let reducedMotionQuery: MediaQueryList | null = null
+
+const syncReducedMotion = () => {
+  prefersReducedMotion.value = reducedMotionQuery?.matches ?? false
+  if (!heroVideo.value) return
+
+  if (prefersReducedMotion.value) {
+    heroVideo.value.pause()
+  } else {
+    void heroVideo.value.play().catch(() => undefined)
+  }
+}
+
+onMounted(() => {
+  reducedMotionQuery = window.matchMedia('(prefers-reduced-motion: reduce)')
+  syncReducedMotion()
+  reducedMotionQuery.addEventListener('change', syncReducedMotion)
+})
+
+onBeforeUnmount(() => {
+  reducedMotionQuery?.removeEventListener('change', syncReducedMotion)
+})
 </script>

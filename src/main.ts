@@ -5,14 +5,28 @@ import routes from '~pages'
 import './style.css'
 import App from './App.vue'
 
-const router = createRouter({
-  history: createWebHashHistory(),
-  routes,
-})
+const legacyPathRedirects: Record<string, string> = {
+  '/priser': '/monstre',
+  '/tjenester': '/monstre',
+}
 
-const head = createHead()
+const legacyPath = window.location.pathname.replace(/\/$/, '') || '/'
+const legacyRedirect = legacyPathRedirects[legacyPath]
 
-createApp(App)
-  .use(router)
-  .use(head)
-  .mount('#app')
+const shouldRedirectLegacyPath = legacyRedirect && window.location.hash === ''
+
+if (shouldRedirectLegacyPath) {
+  window.location.replace(`${window.location.origin}/#${legacyRedirect}`)
+} else {
+  const router = createRouter({
+    history: createWebHashHistory(),
+    routes,
+  })
+
+  const head = createHead()
+
+  createApp(App)
+    .use(router)
+    .use(head)
+    .mount('#app')
+}

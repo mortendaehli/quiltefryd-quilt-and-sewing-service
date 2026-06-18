@@ -26,9 +26,20 @@
   p {
     @apply leading-relaxed;
   }
+
+  a:focus-visible,
+  button:focus-visible {
+    @apply outline-none ring-2 ring-quilt-burgundy ring-offset-2;
+  }
 }
 
 @layer components {
+  .skip-link {
+    @apply sr-only focus:not-sr-only focus:fixed focus:left-4 focus:top-4 focus:z-[100]
+           focus:bg-white focus:text-quilt-burgundy focus:px-4 focus:py-3
+           focus:rounded-lg focus:shadow-lg focus:ring-2 focus:ring-quilt-burgundy;
+  }
+
   .btn-primary {
     @apply bg-quilt-burgundy text-white px-8 py-3.5 rounded-full font-medium 
            hover:bg-opacity-90 transition-all duration-200 transform hover:scale-105
@@ -58,6 +69,31 @@
   
   .section-padding {
     @apply py-20 lg:py-28;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    scroll-behavior: auto !important;
+    transition-duration: 0.01ms !important;
+  }
+
+  .rotate-1,
+  .hover\:rotate-0:hover,
+  .hover\:scale-105:hover,
+  .hover\:scale-\[1\.02\]:hover,
+  .hover\:-translate-y-1:hover,
+  .group:hover .group-hover\:scale-105,
+  .group:hover .group-hover\:translate-x-1 {
+    transform: none !important;
   }
 }
 

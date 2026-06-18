@@ -1,5 +1,5 @@
 <template>
-  <component :is="iconName" :class="className" />
+  <component :is="iconName" :class="className" aria-hidden="true" focusable="false" />
 </template>
 
 <script setup lang="ts">

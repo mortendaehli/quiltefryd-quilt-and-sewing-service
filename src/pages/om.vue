@@ -85,7 +85,7 @@ useHead({
               
               <div class="space-y-4">
                 <div class="flex items-start gap-3">
-                  <span class="text-2xl">🧵</span>
+                  <span class="text-2xl" aria-hidden="true">🧵</span>
                   <div>
                     <h4 class="font-semibold text-gray-900">Innova Longarm-maskin</h4>
                     <p class="text-gray-600 text-sm mt-1">
@@ -96,7 +96,7 @@ useHead({
                 </div>
                 
                 <div class="flex items-start gap-3">
-                  <span class="text-2xl">🪡</span>
+                  <span class="text-2xl" aria-hidden="true">🪡</span>
                   <div>
                     <h4 class="font-semibold text-gray-900">Moderne symaskiner</h4>
                     <p class="text-gray-600 text-sm mt-1">
@@ -107,7 +107,7 @@ useHead({
                 </div>
                 
                 <div class="flex items-start gap-3">
-                  <span class="text-2xl">✂️</span>
+                  <span class="text-2xl" aria-hidden="true">✂️</span>
                   <div>
                     <h4 class="font-semibold text-gray-900">Spesialverktøy</h4>
                     <p class="text-gray-600 text-sm mt-1">
@@ -127,19 +127,19 @@ useHead({
               
               <div class="space-y-3">
                 <div class="flex items-center gap-2">
-                  <span class="text-quilt-burgundy">✓</span>
+                  <span class="text-quilt-burgundy" aria-hidden="true">✓</span>
                   <span class="font-medium">Kvalitet i hvert sting</span>
                 </div>
                 <div class="flex items-center gap-2">
-                  <span class="text-quilt-burgundy">✓</span>
+                  <span class="text-quilt-burgundy" aria-hidden="true">✓</span>
                   <span class="font-medium">Personlig service</span>
                 </div>
                 <div class="flex items-center gap-2">
-                  <span class="text-quilt-burgundy">✓</span>
+                  <span class="text-quilt-burgundy" aria-hidden="true">✓</span>
                   <span class="font-medium">Konkurransedyktige priser</span>
                 </div>
                 <div class="flex items-center gap-2">
-                  <span class="text-quilt-burgundy">✓</span>
+                  <span class="text-quilt-burgundy" aria-hidden="true">✓</span>
                   <span class="font-medium">Respekt for tradisjoner</span>
                 </div>
               </div>
@@ -147,10 +147,10 @@ useHead({
 
             <!-- Quote -->
             <div class="bg-white rounded-xl shadow-lg p-8 border-l-4 border-quilt-burgundy">
-              <p class="italic text-gray-700 text-lg mb-4">
+              <blockquote class="italic text-gray-700 text-lg mb-4">
                 "Hver quilte er unik. Jeg behandler alle
                 oppdrag med samme omhu og respekt, uansett størrelse."
-              </p>
+              </blockquote>
               <p class="text-quilt-forest font-serif">
                 - Marit Aslesen
               </p>

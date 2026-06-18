@@ -40,19 +40,19 @@ useHead({
 
               <a href="tel:95195088" class="block bg-white rounded-lg shadow-md p-6 hover:shadow-lg transition-shadow">
                 <div class="flex items-center gap-4">
-                  <div class="w-12 h-12 bg-quilt-cream rounded-full flex items-center justify-center text-2xl">
+                  <div class="w-12 h-12 bg-quilt-cream rounded-full flex items-center justify-center text-2xl" aria-hidden="true">
                     📞
                   </div>
                   <div>
                     <p class="text-sm text-gray-600">Telefon</p>
-                    <p class="text-lg font-medium text-quilt-forest">951 95 088</p>
+                    <p class="text-lg font-medium text-quilt-forest">95 19 50 88</p>
                   </div>
                 </div>
               </a>
 
               <a href="mailto:marit@quiltefryd.no" class="block bg-white rounded-lg shadow-md p-6 hover:shadow-lg transition-shadow">
                 <div class="flex items-center gap-4">
-                  <div class="w-12 h-12 bg-quilt-cream rounded-full flex items-center justify-center text-2xl">
+                  <div class="w-12 h-12 bg-quilt-cream rounded-full flex items-center justify-center text-2xl" aria-hidden="true">
                     ✉️
                   </div>
                   <div>
@@ -64,7 +64,7 @@ useHead({
 
               <div class="bg-white rounded-lg shadow-md p-6">
                 <div class="flex items-center gap-4">
-                  <div class="w-12 h-12 bg-quilt-cream rounded-full flex items-center justify-center text-2xl">
+                  <div class="w-12 h-12 bg-quilt-cream rounded-full flex items-center justify-center text-2xl" aria-hidden="true">
                     📍
                   </div>
                   <div>
@@ -77,7 +77,7 @@ useHead({
 
               <div class="bg-white rounded-lg shadow-md p-6">
                 <div class="flex items-center gap-4">
-                  <div class="w-12 h-12 bg-quilt-cream rounded-full flex items-center justify-center text-2xl">
+                  <div class="w-12 h-12 bg-quilt-cream rounded-full flex items-center justify-center text-2xl" aria-hidden="true">
                     🕐
                   </div>
                   <div>
@@ -94,24 +94,24 @@ useHead({
               <h3 class="text-xl font-serif text-quilt-forest mb-3">
                 Slik jobber vi sammen
               </h3>
-              <ul class="space-y-2 text-gray-700">
+              <ol class="list-none space-y-2 text-gray-700">
                 <li class="flex items-start gap-2">
-                  <span class="text-quilt-burgundy mt-1">1.</span>
+                  <span class="text-quilt-burgundy mt-1" aria-hidden="true">1.</span>
                   <span>Du tar kontakt og beskriver ditt prosjekt</span>
                 </li>
                 <li class="flex items-start gap-2">
-                  <span class="text-quilt-burgundy mt-1">2.</span>
+                  <span class="text-quilt-burgundy mt-1" aria-hidden="true">2.</span>
                   <span>Jeg gir deg et uforpliktende pristilbud</span>
                 </li>
                 <li class="flex items-start gap-2">
-                  <span class="text-quilt-burgundy mt-1">3.</span>
+                  <span class="text-quilt-burgundy mt-1" aria-hidden="true">3.</span>
                   <span>Vi avtaler levering/henting</span>
                 </li>
                 <li class="flex items-start gap-2">
-                  <span class="text-quilt-burgundy mt-1">4.</span>
+                  <span class="text-quilt-burgundy mt-1" aria-hidden="true">4.</span>
                   <span>Jeg utfører arbeidet til avtalt tid</span>
                 </li>
-              </ul>
+              </ol>
             </div>
           </div>
 
@@ -124,7 +124,7 @@ useHead({
               Besøksadresse
             </h2>
             <p class="text-gray-700 mb-4">
-              Jeg bor til i Tønsberg. Nøyaktig adresse oppgis når vi har avtalt
+              Jeg holder til i Tønsberg. Nøyaktig adresse oppgis når vi har avtalt
               tid for levering/sending eller henting av ditt prosjekt.
             </p>
           </div>

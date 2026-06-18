@@ -1,112 +1,38 @@
 <script setup lang="ts">
+import { onMounted } from 'vue'
 import { useHead } from '@vueuse/head'
+import { useRouter } from 'vue-router'
 
 useHead({
-  title: 'Priser - Quiltefryd | Longarm-quilting i Tønsberg',
+  title: 'Quiltemønstre og priser - Quiltefryd | Longarm-quilting i Tønsberg',
   meta: [
-    { name: 'description', content: 'Prisliste for longarm-quilting av tepper. Se priser for E2E-quilting og spesialoppdrag.' }
-  ]
+    {
+      name: 'description',
+      content:
+        'Priser, tjenester og quiltemønstre for longarm-quilting er samlet på én side hos Quiltefryd.',
+    },
+  ],
+})
+
+const router = useRouter()
+
+onMounted(() => {
+  void router.replace('/monstre')
 })
 </script>
 
 <template>
-  <div class="min-h-screen">
-    <!-- Hero Section -->
-    <section class="bg-gradient-to-br from-quilt-cream to-quilt-beige py-12">
-      <div class="container-custom">
-        <h1 class="text-4xl md:text-5xl font-serif text-quilt-burgundy mb-4">
-          Prisliste
-        </h1>
-        <p class="text-lg text-gray-700 max-w-3xl">
-          Her finner du en oversikt over mine priser. Jeg tilbyr konkurransedyktige priser og skreddersydde løsninger.
-        </p>
-      </div>
-    </section>
-
-    <!-- Pricing Content -->
-    <section class="py-16">
-      <div class="container-custom">
-
-        <!-- Quilting Prices -->
-        <div class="mb-12">
-          <h2 class="text-2xl md:text-3xl font-serif text-quilt-burgundy mb-6">
-            Quilting av tepper
-          </h2>
-          <div class="bg-white rounded-xl shadow-lg overflow-hidden">
-            <table class="w-full">
-              <thead class="bg-quilt-cream">
-                <tr>
-                  <th class="text-left px-6 py-4 font-serif text-quilt-forest">Tjeneste</th>
-                  <th class="text-right px-6 py-4 font-serif text-quilt-forest">Pris</th>
-                </tr>
-              </thead>
-              <tbody class="divide-y divide-gray-200">
-                <tr>
-                  <td class="px-6 py-4">
-                    <div>
-                      <p class="font-medium">E2E-quilting (heldekkende mønster)</p>
-                      <p class="text-sm text-gray-600">
-                        Inkluderer tråd. Prisen varierer med valg av mønster —
-                        <RouterLink to="/monstre" class="text-quilt-burgundy hover:underline">
-                          se alle mønstre
-                        </RouterLink>.
-                      </p>
-                    </div>
-                  </td>
-                  <td class="text-right px-6 py-4 font-medium">300-390 kr pr. m²</td>
-                </tr>
-                <tr>
-                  <td class="px-6 py-4">
-                    <div>
-                      <p class="font-medium">Minimumspris</p>
-                      <p class="text-sm text-gray-600">Per teppe eller løper.</p>
-                    </div>
-                  </td>
-                  <td class="text-right px-6 py-4 font-medium">700,- kr</td>
-                </tr>
-                 <tr>
-                  <td class="px-6 py-4">
-                    <div>
-                      <p class="font-medium">Vatt til tepper</p>
-                      <p class="text-sm text-gray-600">Jeg har vatt tilgjengelig for dine prosjekter.</p>
-                    </div>
-                  </td>
-                  <td class="text-right px-6 py-4 font-medium">Pris på forespørsel</td>
-                </tr>
-              </tbody>
-            </table>
-          </div>
-        </div>
-
-        <!-- Pickup/Delivery Info -->
-        <div class="bg-gradient-to-br from-quilt-beige to-quilt-cream rounded-2xl p-8 mb-12 text-center">
-          <h2 class="text-2xl font-serif text-quilt-burgundy mb-4">
-            Henting og Levering
-          </h2>
-          <p class="text-lg text-gray-700 max-w-2xl mx-auto">
-            Vi avtaler via SMS eller telefon for henting/levering i bunadsbutikken i Øvre Langgate 71 (Gjesdal bunad søm og håndverk).
-          </p>
-        </div>
-
-        <!-- CTA Section -->
-        <div class="text-center bg-white rounded-2xl shadow-lg p-8 md:p-12">
-          <h2 class="text-3xl font-serif text-quilt-burgundy mb-4">
-            Har du et prosjekt?
-          </h2>
-          <p class="text-lg text-gray-700 mb-8 max-w-2xl mx-auto">
-            Kontakt meg for et uforpliktende pristilbud. Jeg hjelper deg gjerne!
-          </p>
-          <div class="flex flex-col sm:flex-row gap-4 justify-center">
-            <a href="tel:95195088" class="btn-secondary">
-              Ring 95 19 50 88
-            </a>
-            <RouterLink to="/kontakt" class="btn-primary">
-              Ta kontakt
-            </RouterLink>
-          </div>
-        </div>
-
-      </div>
-    </section>
+  <div class="min-h-screen bg-quilt-cream flex items-center justify-center px-4 text-center">
+    <div>
+      <h1 class="text-3xl font-serif text-quilt-burgundy mb-4">
+        Quiltemønstre og priser
+      </h1>
+      <p class="text-gray-700 mb-6">
+        Prislisten er samlet på siden for quiltemønstre.
+      </p>
+      <RouterLink to="/monstre" class="btn-primary inline-block">
+        Gå til Quiltemønstre og priser
+      </RouterLink>
+    </div>
   </div>
 </template>

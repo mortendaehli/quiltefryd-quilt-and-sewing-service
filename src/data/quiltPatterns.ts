@@ -65,6 +65,16 @@ export const quiltPatternFiles: string[] = [
 
 const FILENAME_RE = /^[Nn]r\s+(\d+)\s+(.+?)\s+(?:kr\s+)?(\d+)\s+m2\s*\.[a-z]+$/i
 
+const DISPLAY_NAME_OVERRIDES: Record<number, string> = {
+  2: "Jessie's Continuous Baptist Fan",
+  4: 'Angel Wings',
+  38: 'Forever Daisies',
+  40: 'One Cloudy Day',
+  41: 'Water Dipper',
+  59: 'KP Beadsies 1',
+  64: 'KE Chevrons 2',
+}
+
 function prettifyName(raw: string): string {
   return raw
     .replace(/[-_]+/g, ' ')
@@ -81,9 +91,10 @@ export function parseQuiltPattern(filename: string): QuiltPattern {
     throw new Error(`Klarte ikke parse mønsterfilnavn: ${filename}`)
   }
   const [, nrStr, rawName, priceStr] = match
+  const nr = parseInt(nrStr, 10)
   return {
-    nr: parseInt(nrStr, 10),
-    name: prettifyName(rawName),
+    nr,
+    name: DISPLAY_NAME_OVERRIDES[nr] ?? prettifyName(rawName),
     price: parseInt(priceStr, 10),
     src: `${import.meta.env.BASE_URL}images/quilt-patterns/${filename}`,
     filename,

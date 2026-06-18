@@ -6,7 +6,7 @@ const currentYear = computed(() => new Date().getFullYear())
 </script>
 
 <template>
-  <footer class="bg-quilt-forest text-white mt-16 pb-20 md:pb-0">
+  <footer class="bg-quilt-forest text-white mt-16">
     <div class="container-custom py-8">
       <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
         <!-- Kontakt Info -->
@@ -14,11 +14,11 @@ const currentYear = computed(() => new Date().getFullYear())
           <h3 class="text-xl font-serif mb-4 text-quilt-cream">Kontakt</h3>
           <div class="space-y-2">
             <p>
-              <a href="mailto:marit@quiltefryd.no" class="hover:text-quilt-cream transition-colors">
-                ✉️ marit@quiltefryd.no
+              <a href="mailto:marit@quiltefryd.no" class="hover:text-quilt-cream transition-colors" aria-label="Send e-post til marit@quiltefryd.no">
+                <span aria-hidden="true">✉️</span> marit@quiltefryd.no
               </a>
             </p>
-            <p>📍 Tønsberg</p>
+            <p><span aria-hidden="true">📍</span> Tønsberg</p>
             <p class="text-sm opacity-90">Adresse oppgis ved avtale</p>
           </div>
         </div>
@@ -28,13 +28,13 @@ const currentYear = computed(() => new Date().getFullYear())
           <h3 class="text-xl font-serif mb-4 text-quilt-cream">Tjenester</h3>
           <ul class="space-y-2">
             <li>
-              <RouterLink to="/tjenester#longarm-quilting" class="hover:text-quilt-cream transition-colors">
+              <RouterLink to="/monstre#longarm-quilting" class="hover:text-quilt-cream transition-colors">
                 Longarm-quilting
               </RouterLink>
             </li>
             <li>
               <RouterLink to="/monstre" class="hover:text-quilt-cream transition-colors">
-                Quiltemønstre
+                Quiltemønstre og priser
               </RouterLink>
             </li>
           </ul>

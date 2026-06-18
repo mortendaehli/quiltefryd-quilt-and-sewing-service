@@ -1,9 +1,10 @@
 <script setup lang="ts">
-import { ref } from 'vue'
-import { RouterLink } from 'vue-router'
+import { ref, watch } from 'vue'
+import { RouterLink, useRoute } from 'vue-router'
 import AppNavigation from './AppNavigation.vue'
 
 const isMenuOpen = ref(false)
+const route = useRoute()
 
 const toggleMenu = () => {
   isMenuOpen.value = !isMenuOpen.value
@@ -12,6 +13,8 @@ const toggleMenu = () => {
 const closeMenu = () => {
   isMenuOpen.value = false
 }
+
+watch(() => route.fullPath, closeMenu)
 </script>
 
 <template>
@@ -41,11 +44,14 @@ const closeMenu = () => {
 
           <!-- Mobile Menu Button -->
           <button
+            type="button"
             @click="toggleMenu"
             class="md:hidden p-2 rounded-lg hover:bg-gray-100 transition-colors"
-            aria-label="Meny"
+            :aria-label="isMenuOpen ? 'Lukk meny' : 'Åpne meny'"
+            :aria-expanded="isMenuOpen"
+            aria-controls="mobile-navigation"
           >
-            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true" focusable="false">
               <path 
                 v-if="isMenuOpen"
                 stroke-linecap="round" 
@@ -66,7 +72,7 @@ const closeMenu = () => {
       </div>
 
       <!-- Mobile Menu -->
-      <div v-if="isMenuOpen" class="md:hidden border-t border-gray-200">
+      <div v-if="isMenuOpen" id="mobile-navigation" class="md:hidden border-t border-gray-200">
         <div class="container-custom py-4">
           <AppNavigation mobile @item-click="closeMenu" />
           <div class="mt-4 pt-4 border-t border-gray-200">
@@ -80,16 +86,20 @@ const closeMenu = () => {
           </div>
         </div>
       </div>
-    </header>
 
-    <!-- Mobile Sticky Contact Bar -->
-    <div class="md:hidden fixed bottom-0 left-0 right-0 bg-quilt-burgundy text-white z-40">
-      <div class="flex">
-        <a href="mailto:marit@quiltefryd.no" class="flex-1 py-3 text-center">
-          <span class="text-sm">Send</span>
-          <span class="block font-medium">E-post</span>
-        </a>
-      </div>
-    </div>
+      <!-- Mobile Contact Bar -->
+      <nav class="md:hidden border-t border-white/20 bg-quilt-burgundy text-white" aria-label="Rask kontakt">
+        <div class="grid grid-cols-2">
+          <a href="tel:95195088" class="py-3 text-center font-medium hover:bg-white/10 transition-colors">
+            Ring
+            <span class="block text-sm font-normal opacity-90">95 19 50 88</span>
+          </a>
+          <a href="mailto:marit@quiltefryd.no" class="py-3 text-center font-medium hover:bg-white/10 transition-colors border-l border-white/20">
+            E-post
+            <span class="block text-sm font-normal opacity-90">Send melding</span>
+          </a>
+        </div>
+      </nav>
+    </header>
   </div>
 </template>

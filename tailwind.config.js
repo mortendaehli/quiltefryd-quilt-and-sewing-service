@@ -13,7 +13,8 @@ export default {
         'quilt-beige': '#E6DDC7',
         'quilt-cream': '#FAF8F5',
         'quilt-gold': '#C8A583',
-        'quilt-brown': '#8B7960',
+        'quilt-bronze': '#6B513B',
+        'quilt-brown': '#6F5745',
         'quilt-taupe': '#AA956A',
         'quilt-moss': '#5A6B5E',
       },
@@ -72,4 +73,3 @@ export default {
   },
   plugins: [],
 }
-

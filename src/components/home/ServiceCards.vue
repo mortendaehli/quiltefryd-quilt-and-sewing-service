@@ -2,12 +2,12 @@
   <section class="section-padding bg-gradient-to-b from-white to-quilt-cream/30">
     <div class="container-custom">
       <div class="text-center mb-16 max-w-3xl mx-auto">
-        <span class="text-quilt-gold uppercase tracking-[0.2em] text-sm font-medium">Tjenester</span>
+        <span class="text-quilt-bronze uppercase tracking-[0.2em] text-sm font-medium">Longarm-quilting</span>
         <h2 class="text-4xl md:text-5xl font-serif text-quilt-forest mb-6 mt-3 font-light">
-          Mine tjenester
+          Quiltemønstre og priser
         </h2>
         <p class="text-lg text-gray-600 leading-relaxed">
-          Profesjonell longarm-quilting med fokus på kvalitet og håndverk
+          Profesjonell longarm-quilting med mønstre, priser og informasjon samlet på ett sted
         </p>
       </div>
 
@@ -35,8 +35,8 @@
                 {{ service.description }}
               </p>
               <span class="inline-flex items-center text-quilt-burgundy font-medium pt-1 group-hover:gap-3 transition-all">
-                Les mer 
-                <svg class="w-4 h-4 ml-2 group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                Se mønstre og priser
+                <svg class="w-4 h-4 ml-2 group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true" focusable="false">
                   <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
                 </svg>
               </span>
@@ -46,9 +46,9 @@
       </div>
 
       <div class="text-center mt-16">
-        <router-link to="/tjenester" class="btn-primary inline-flex items-center gap-2 group">
-          <span>Se alle tjenester</span>
-          <svg class="w-5 h-5 group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+        <router-link to="/monstre" class="btn-primary inline-flex items-center gap-2 group">
+          <span>Se Quiltemønstre og priser</span>
+          <svg class="w-5 h-5 group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true" focusable="false">
             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 7l5 5m0 0l-5 5m5-5H6" />
           </svg>
         </router-link>
@@ -63,8 +63,8 @@ import SewingIcons from '@/components/icons/SewingIcons.vue'
 const services = [
   {
     title: 'Longarm-quilting',
-    description: 'Profesjonell quilting med longarm-maskin. Kant-til-kant mønster, vatt og bakstykke.',
-    link: '/tjenester#longarm-quilting',
+    description: 'Kant-til-kant mønstre, pris per m², minimumspris og praktisk informasjon om levering.',
+    link: '/monstre#longarm-quilting',
     icon: 'Quilt' as const
   }
 ]

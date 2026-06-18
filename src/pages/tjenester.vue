@@ -1,124 +1,38 @@
 <script setup lang="ts">
+import { onMounted } from 'vue'
 import { useHead } from '@vueuse/head'
+import { useRouter } from 'vue-router'
 
 useHead({
-  title: 'Tjenester - Quiltefryd | Longarm-quilting i Tønsberg',
+  title: 'Quiltemønstre og priser - Quiltefryd | Longarm-quilting i Tønsberg',
   meta: [
-    { name: 'description', content: 'Profesjonell longarm-quilting i Tønsberg. Se alle våre quiltetjenester.' }
-  ]
+    {
+      name: 'description',
+      content:
+        'Tjenester, quiltemønstre og priser for longarm-quilting er samlet på én side hos Quiltefryd.',
+    },
+  ],
+})
+
+const router = useRouter()
+
+onMounted(() => {
+  void router.replace('/monstre')
 })
 </script>
 
 <template>
-  <div class="min-h-screen">
-    <!-- Hero Section -->
-    <section class="bg-gradient-to-br from-quilt-cream to-quilt-beige py-12">
-      <div class="container-custom">
-        <h1 class="text-4xl md:text-5xl font-serif text-quilt-burgundy mb-4">
-          Mine tjenester
-        </h1>
-        <p class="text-lg text-gray-700 max-w-3xl">
-          Jeg hjelper deg med longarm-quilting.
-          Alle oppdrag utføres med omhu og fokus på kvalitet.
-        </p>
-      </div>
-    </section>
-
-    <!-- Services Sections -->
-    <section class="py-16">
-      <div class="container-custom space-y-16">
-        
-        <!-- Longarm Quilting -->
-        <div id="longarm-quilting" class="scroll-mt-20">
-          <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 items-start">
-            <div>
-              <h2 class="text-3xl font-serif text-quilt-burgundy mb-4">
-                Longarm-quilting
-              </h2>
-              <div class="prose prose-lg text-gray-700 space-y-4">
-                <p>
-                  Jeg quilter teppene dine på min profesjonelle longarm-maskin.
-                </p>
-                
-                <h3 class="text-xl font-serif text-quilt-forest mt-6 mb-3">
-                  E2E-quilting (heldekkende mønster):
-                </h3>
-                <ul class="space-y-2">
-                  <li>✓ Mange mønstre å velge mellom</li>
-                  <li>✓ Inkludert tråd i prisen</li>
-                  <li>✓ Jeg har vatt til tepper</li>
-                  <li>✓ Profesjonell finish og kvalitet</li>
-                  <li>✓ Minimumspris kr 700,- per teppe eller løper</li>
-                </ul>
-
-                <p class="mt-4">
-                  <RouterLink to="/monstre" class="text-quilt-burgundy font-medium hover:underline">
-                    Se alle quiltemønstre →
-                  </RouterLink>
-                </p>
-
-                <h3 class="text-xl font-serif text-quilt-forest mt-6 mb-3">
-                  Levering og henting:
-                </h3>
-                <p>
-                  Vi avtaler via SMS eller telefon for henting/levering i bunadsbutikken i 
-                  <strong>Øvre Langgate 71 (Gjesdal bunad søm og håndverk)</strong>.
-                </p>
-              </div>
-              
-              <RouterLink to="/kontakt" class="btn-primary inline-block mt-6">
-                Ta kontakt
-              </RouterLink>
-            </div>
-            
-            <div class="bg-quilt-cream rounded-xl p-8">
-              <div class="aspect-square rounded-lg overflow-hidden">
-                <img 
-                  src="/images/IMG_2087.jpg" 
-                  alt="Profesjonell longarm-quilting - gul og grå moderne quilt"
-                  class="w-full h-full object-cover"
-                />
-              </div>
-              <p class="text-center mt-4 text-sm text-gray-600">
-                Kr 350-400 per m² (inkl. tråd)
-              </p>
-            </div>
-          </div>
-        </div>
-
-      </div>
-    </section>
-
-    <!-- FAQ Section -->
-    <section class="py-16 bg-quilt-cream">
-      <div class="container-custom">
-        <h2 class="text-3xl font-serif text-quilt-burgundy mb-8 text-center">
-          Ofte stilte spørsmål
-        </h2>
-        
-        <div class="max-w-3xl mx-auto space-y-6">
-          
-          <div class="bg-white rounded-lg p-6">
-            <h3 class="font-semibold text-quilt-forest mb-2">
-              Må jeg komme til Tønsberg for å levere?
-            </h3>
-            <p class="text-gray-700">
-              Nei, du kan sende quiltetopper per post.
-              Vi avtaler frakt og retur når du tar kontakt.
-            </p>
-          </div>
-          
-          <div class="bg-white rounded-lg p-6">
-            <h3 class="font-semibold text-quilt-forest mb-2">
-              Hvordan betaler jeg?
-            </h3>
-            <p class="text-gray-700">
-              Vipps, kontant eller bankoverføring ved henting/levering. 
-              Faktura kan ordnes for firmaer.
-            </p>
-          </div>
-        </div>
-      </div>
-    </section>
+  <div class="min-h-screen bg-quilt-cream flex items-center justify-center px-4 text-center">
+    <div>
+      <h1 class="text-3xl font-serif text-quilt-burgundy mb-4">
+        Quiltemønstre og priser
+      </h1>
+      <p class="text-gray-700 mb-6">
+        Tjenester og priser er samlet på siden for quiltemønstre.
+      </p>
+      <RouterLink to="/monstre" class="btn-primary inline-block">
+        Gå til Quiltemønstre og priser
+      </RouterLink>
+    </div>
   </div>
 </template>

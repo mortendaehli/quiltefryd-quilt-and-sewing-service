@@ -13,7 +13,7 @@
                 hjulpet veldig mange kunder med deres quilteprosjekter.
               </p>
               <p>
-                Quilting på min <strong>Innova longarm-maskin</strong>..
+                Quilting på min <strong>Innova longarm-maskin</strong>.
               </p>
               <p>
                 Selv om butikken nå er stengt, fortsetter jeg å tilby mine tjenester 
@@ -37,15 +37,15 @@
               </h3>
               <ul class="space-y-2 text-gray-700">
                 <li class="flex items-start gap-2">
-                  <span class="text-quilt-burgundy mt-1">✓</span>
+                  <span class="text-quilt-burgundy mt-1" aria-hidden="true">✓</span>
                   <span>Innova longarm quiltemaskin for store prosjekter</span>
                 </li>
                 <li class="flex items-start gap-2">
-                  <span class="text-quilt-burgundy mt-1">✓</span>
+                  <span class="text-quilt-burgundy mt-1" aria-hidden="true">✓</span>
                   <span>Moderne symaskiner for presisjon</span>
                 </li>
                 <li class="flex items-start gap-2">
-                  <span class="text-quilt-burgundy mt-1">✓</span>
+                  <span class="text-quilt-burgundy mt-1" aria-hidden="true">✓</span>
                   <span>Alt av profesjonelt utstyr for nøyaktig måling, kutting og finish</span>
                 </li>
               </ul>

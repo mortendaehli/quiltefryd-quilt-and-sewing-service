@@ -2,7 +2,7 @@
   <section class="section-padding bg-gradient-to-b from-quilt-cream/30 to-white">
     <div class="container-custom">
       <div class="text-center mb-16 max-w-3xl mx-auto">
-        <span class="text-quilt-gold uppercase tracking-[0.2em] text-sm font-medium">Prosess</span>
+        <span class="text-quilt-bronze uppercase tracking-[0.2em] text-sm font-medium">Prosess</span>
         <h2 class="text-4xl md:text-5xl font-serif text-quilt-forest mb-6 mt-3 font-light">
           Slik jobber jeg
         </h2>
@@ -24,7 +24,7 @@
             <!-- Icon Circle -->
             <div class="mx-auto w-28 h-28 bg-gradient-to-br from-white to-quilt-cream rounded-full shadow-xl flex items-center justify-center mb-6 relative transform group-hover:scale-110 transition-transform duration-300">
               <ProcessIcons :name="step.icon" class="w-12 h-12 text-quilt-forest" />
-              <div class="absolute -top-2 -right-2 w-10 h-10 bg-gradient-to-br from-quilt-burgundy to-quilt-brown text-white rounded-full flex items-center justify-center font-bold shadow-lg animate-pulse-soft">
+              <div class="absolute -top-2 -right-2 w-10 h-10 bg-gradient-to-br from-quilt-burgundy to-quilt-brown text-white rounded-full flex items-center justify-center font-bold shadow-lg animate-pulse-soft" aria-hidden="true">
                 {{ step.number }}
               </div>
             </div>
@@ -54,7 +54,7 @@
           <router-link to="/kontakt" class="btn-primary group">
             <span class="inline-flex items-center gap-2">
               Ta kontakt
-              <svg class="w-5 h-5 group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <svg class="w-5 h-5 group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true" focusable="false">
                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 7l5 5m0 0l-5 5m5-5H6" />
               </svg>
             </span>
